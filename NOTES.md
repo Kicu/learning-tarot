@@ -1,6 +1,8 @@
 # Working Notes
 
 ## Teaching preferences (stated 2026-07-30)
+- **Prose style (added 2026-08-01):** `writing-style.md` at the repo root governs all lesson prose. Flowing sentences over staccato fragments; avoid "Here is X and it is not Y" and "This is Z: it does A, it does B" patterns. When revising existing text, change no more than ~25–30% of it.
+- **Verify every external link before citing it** (2026-08-01: caught a fabricated sacred-texts preface URL in lesson 1). sacred-texts.com sits behind a Cloudflare challenge — check its URLs via the Wayback Machine, not curl.
 - **Framing: "both, kept labelled."** Teach the esoteric system properly — it is what the cards actually encode — but always flag what is documented history vs. later invention. This is a hard requirement, not a stylistic preference. Every lesson uses the two-callout convention below.
 - Owns a physical RWS deck → every lesson should include a hands-on step with the real cards.
 - Wants the *why* behind meanings, not lookup-table memorisation. "Say what it means and why it means that" is the mission's load-bearing phrase.
@@ -22,7 +24,7 @@ Not yet promoted to `GLOSSARY.md` — glossary entries are only added once Mateu
 
 ## Lesson arc (provisional)
 1. **Where tarot comes from** — three historical layers; the Magician as case study. ← built
-2. **Deck anatomy** — 22 + 56, the four suits and their elements, court ranks. Hands-on sorting.
+2. **Deck anatomy** — 22 + 56, the four suits and their elements, court ranks. Hands-on sorting. ← built (with `reference/deck-map.html`)
 3. **The four suits as four kinds of problem** — Wands/Cups/Swords/Pentacles; how suit alone constrains meaning.
 4. **Numbers 1–10 as a narrative arc** — read a suit card you have never seen from number + suit alone.
 5. **Court cards** — the four ranks as postures toward the suit's material.

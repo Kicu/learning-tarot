@@ -29,6 +29,13 @@ Curated, high-trust only. Tarot has an unusually bad signal-to-noise ratio: most
   Edition-by-edition documentation of the 1909 deck and its printings. Use for: which version of the deck an image comes from.
 - [Hyperallergic — "The Unsung Woman Artist Behind Your Tarot Cards"](https://hyperallergic.com/the-unnamed-woman-artist-revealed-in-the-monogram-of-your-tarot-cards/)
   On Pamela Colman Smith's authorship and erasure. Use for: the Smith attribution question.
+- [Wikipedia — Mamluk playing cards](https://en.wikipedia.org/wiki/Mamluk_playing_cards)
+  The Topkapı pack and the cups/coins/swords/polo-sticks suit system Europe imported in the 1370s. Well-sourced overview; follow its citations for depth. Use for: where the four suit signs came from. (The World of Playing Cards page on this 404s — do not cite it.)
+
+## Knowledge — Occult primary documents
+
+- [Golden Dawn, _Book T — The Tarot_ (c. 1888–96), full text at hermetic.com](https://hermetic.com/gdlibrary/book-t)
+  The order's internal tarot curriculum: suit–element assignments, card titles, astrological attributions. **A primary source for layer-2 doctrine, not for history** — cite it to show who asserted a correspondence and when. Use for: any "where does that meaning come from" question whose answer is "the Golden Dawn."
 
 ## Knowledge — Card images
 
