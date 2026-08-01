@@ -1,0 +1,494 @@
+/* Shared stylesheet for all tarot lessons and reference sheets.
+   Tufte-influenced: one narrow text column, sidenotes in the margin, prints cleanly. */
+
+:root {
+  --paper: #fdfcf7;
+  --ink: #211f1a;
+  --muted: #6f6857;
+  --rule: #ded8c8;
+  --rule-soft: #ece7da;
+  --link: #7a3b2e;
+  --documented: #2f6b5f;
+  --documented-bg: #f0f6f3;
+  --invented: #96631a;
+  --invented-bg: #fbf4e6;
+  --serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  --sans: "Avenir Next", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #17161a;
+    --ink: #e6e1d6;
+    --muted: #9b9484;
+    --rule: #38352e;
+    --rule-soft: #26241f;
+    --link: #d99a84;
+    --documented: #6fbfa8;
+    --documented-bg: #1a2523;
+    --invented: #d9ad63;
+    --invented-bg: #262015;
+  }
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 1.0625rem;
+  line-height: 1.62;
+  margin: 0;
+  padding: 3.5rem 1.5rem 6rem;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── Layout ─────────────────────────────────────────────────
+   .page is 71rem wide; content is capped at 51rem, leaving a
+   20rem margin column that sidenotes float into.
+   Keep the invariant: text + 4rem gutter + 16rem sidenote = .page.
+   If you change the text column, change .page by the same amount
+   and move the stacking breakpoint below to .page + 3rem.      */
+
+.page { max-width: 71rem; margin: 0 auto; }
+.page > * { max-width: 51rem; }
+.page > .wide, .page > figure.wide, .page > .full { max-width: 71rem; }
+
+/* ── Headings ─────────────────────────────────────────────── */
+
+h1, h2, h3, h4 { font-weight: 400; line-height: 1.2; }
+
+h1 {
+  font-size: 2.1rem;
+  margin: 0 0 .3rem;
+  letter-spacing: -0.012em;
+}
+
+h2 {
+  font-size: 1.4rem;
+  margin: 3.2rem 0 .9rem;
+  padding-top: .85rem;
+  border-top: 1px solid var(--rule);
+}
+
+h3 {
+  font-size: 1.1rem;
+  margin: 2rem 0 .5rem;
+  font-style: italic;
+}
+
+.kicker {
+  font-family: var(--sans);
+  font-size: .68rem;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0 0 1.1rem;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: var(--muted);
+  margin: 0 0 2rem;
+  line-height: 1.4;
+}
+
+p { margin: 0 0 1.1rem; }
+
+a { color: var(--link); text-decoration: none; border-bottom: 1px solid var(--rule); }
+a:hover { border-bottom-color: var(--link); }
+
+em { font-style: italic; }
+strong { font-weight: 600; }
+
+/* ── The win box: what this lesson buys you ───────────────── */
+
+.win {
+  border-left: 3px solid var(--ink);
+  padding: .1rem 0 .1rem 1.1rem;
+  margin: 0 0 2.4rem;
+}
+.win .win-label {
+  font-family: var(--sans);
+  font-size: .66rem;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  color: var(--muted);
+  display: block;
+  margin-bottom: .35rem;
+}
+.win p { margin: 0; font-size: 1.05rem; }
+
+/* ── Sidenotes ──────────────────────────────────────────────
+   Author these as DIRECT children of .page, never nested inside a <p>.
+   The float then resolves against .page's 71rem edge and lands in the
+   margin column beside the 51rem text block — no negative margin needed.
+   Place one just before the paragraph it annotates.                     */
+
+.side {
+  float: right;
+  clear: right;
+  width: 16rem;
+  margin: .35rem 0 .9rem 1.5rem;
+  font-family: var(--sans);
+  font-size: .76rem;
+  line-height: 1.5;
+  color: var(--muted);
+}
+.side a { font-size: inherit; }
+
+/* ── Labelled callouts: the documented/invented distinction ─ */
+
+.callout {
+  margin: 1.6rem 0;
+  padding: 1rem 1.2rem;
+  border-left: 3px solid;
+  border-radius: 2px;
+  font-size: .95rem;
+}
+.callout p:last-child { margin-bottom: 0; }
+.callout .tag {
+  display: block;
+  font-family: var(--sans);
+  font-size: .64rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  margin-bottom: .45rem;
+  font-weight: 600;
+}
+.callout.documented { border-color: var(--documented); background: var(--documented-bg); }
+.callout.documented .tag { color: var(--documented); }
+.callout.invented { border-color: var(--invented); background: var(--invented-bg); }
+.callout.invented .tag { color: var(--invented); }
+
+/* ── Figures and card images ──────────────────────────────── */
+
+figure { margin: 2.2rem 0; }
+/* display:block on svg too — inline SVG otherwise sits on a text baseline
+   and the descender gap pushes its caption out of alignment with siblings. */
+figure img, figure svg { max-width: 100%; height: auto; display: block; }
+
+figcaption {
+  font-family: var(--sans);
+  font-size: .76rem;
+  line-height: 1.5;
+  color: var(--muted);
+  margin-top: .7rem;
+}
+
+.card-row {
+  display: flex;
+  gap: 1.4rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.card-row > figure { margin: 0; flex: 1 1 10rem; min-width: 8.5rem; max-width: 15rem; }
+.card-row img {
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  box-shadow: 0 1px 5px rgba(0,0,0,.09);
+}
+.card-row figcaption { margin-top: .55rem; }
+
+/* .plate normalises scans of differing aspect ratio to one height, so the
+   captions align — the museum-plate look. Height is tuned so three cards
+   fill the 51rem text column; keep card scale identical across a lesson so
+   the reader is comparing images, not sizes. */
+/* nowrap is load-bearing: with max-width removed, each figure's flex base
+   size is its caption's max-content width, which would wrap the cards onto
+   separate rows. A comparison must stay on one line. */
+.card-row.plate { flex-wrap: nowrap; }
+.card-row.plate > figure { flex: 0 1 auto; max-width: none; }
+.card-row.plate img,
+.card-row.plate svg { height: 27rem; width: auto; max-width: 100%; }
+.card-row .yr {
+  display: block;
+  font-weight: 600;
+  color: var(--ink);
+  letter-spacing: .04em;
+}
+
+/* ── Tables ───────────────────────────────────────────────── */
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: .9rem;
+  margin: 1.8rem 0;
+}
+th, td {
+  text-align: left;
+  vertical-align: top;
+  padding: .6rem .8rem .6rem 0;
+  border-bottom: 1px solid var(--rule-soft);
+}
+th {
+  font-family: var(--sans);
+  font-size: .68rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-weight: 600;
+  border-bottom: 1px solid var(--rule);
+}
+tbody tr:last-child td { border-bottom: none; }
+
+/* ── Hands-on step list ───────────────────────────────────── */
+
+.handson { counter-reset: step; list-style: none; padding: 0; margin: 1.5rem 0; }
+.handson > li {
+  counter-increment: step;
+  position: relative;
+  padding-left: 2.4rem;
+  margin-bottom: 1.05rem;
+}
+.handson > li::before {
+  content: counter(step);
+  position: absolute;
+  left: 0;
+  top: .08rem;
+  width: 1.6rem;
+  height: 1.6rem;
+  border: 1px solid var(--rule);
+  border-radius: 50%;
+  font-family: var(--sans);
+  font-size: .74rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--muted);
+}
+
+/* ── Quiz widget (assets/quiz.js) ─────────────────────────── */
+
+.quiz { margin: 1.8rem 0; }
+.quiz-q { margin-bottom: 1.9rem; }
+.quiz-q > .prompt { font-weight: 600; margin-bottom: .7rem; }
+.quiz-opts { list-style: none; padding: 0; margin: 0; }
+.quiz-opts li {
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  padding: .5rem .8rem;
+  margin-bottom: .4rem;
+  cursor: pointer;
+  font-size: .95rem;
+  transition: background .12s, border-color .12s;
+  user-select: none;
+}
+.quiz-opts li:hover { background: var(--rule-soft); }
+.quiz-opts li.picked-right { border-color: var(--documented); background: var(--documented-bg); font-weight: 600; }
+.quiz-opts li.picked-wrong { border-color: #b3543f; background: rgba(179,84,63,.09); text-decoration: line-through; }
+.quiz-opts li.reveal { border-color: var(--documented); }
+.quiz-q.done .quiz-opts li { cursor: default; }
+.quiz-q.done .quiz-opts li:hover { background: none; }
+.quiz-q.done .quiz-opts li.picked-wrong:hover { background: rgba(179,84,63,.09); }
+.quiz-q.done .quiz-opts li.picked-right:hover,
+.quiz-q.done .quiz-opts li.reveal:hover { background: var(--documented-bg); }
+
+.why {
+  display: none;
+  margin-top: .6rem;
+  padding-left: .85rem;
+  border-left: 2px solid var(--rule);
+  font-size: .88rem;
+  color: var(--muted);
+}
+.quiz-q.done .why { display: block; }
+
+.score {
+  font-family: var(--sans);
+  font-size: .78rem;
+  color: var(--muted);
+  border-top: 1px solid var(--rule);
+  padding-top: .8rem;
+}
+
+/* ── Ordering drill (assets/order.js) ─────────────────────── */
+
+.order { margin: 1.8rem 0; }
+.order-pool { list-style: none; padding: 0; margin: 0 0 1rem; }
+.order-pool li {
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  padding: .5rem .8rem;
+  margin-bottom: .4rem;
+  cursor: pointer;
+  font-size: .93rem;
+  transition: opacity .15s, background .12s;
+  user-select: none;
+}
+.order-pool li:hover { background: var(--rule-soft); }
+.order-pool li.taken { opacity: .28; pointer-events: none; text-decoration: line-through; }
+.order-pool li.wrong { border-color: #b3543f; background: rgba(179,84,63,.11); }
+
+.order-built { list-style: none; padding: 0; margin: 0; counter-reset: built; }
+.order-built li {
+  counter-increment: built;
+  padding: .42rem .8rem .42rem 2.3rem;
+  border-left: 2px solid var(--documented);
+  margin-bottom: .3rem;
+  font-size: .93rem;
+  position: relative;
+  background: var(--documented-bg);
+}
+.order-built li::before {
+  content: counter(built);
+  position: absolute;
+  left: .7rem;
+  font-family: var(--sans);
+  font-size: .72rem;
+  color: var(--muted);
+}
+.order-built .yr-reveal { font-family: var(--sans); font-size: .74rem; color: var(--documented); font-weight: 600; margin-left: .4rem; }
+
+.drill-reset {
+  font-family: var(--sans);
+  font-size: .72rem;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  background: none;
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  padding: .38rem .8rem;
+  color: var(--muted);
+  cursor: pointer;
+}
+.drill-reset:hover { border-color: var(--ink); color: var(--ink); }
+
+/* ── Source recommendation ────────────────────────────────── */
+
+.source {
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  padding: 1.1rem 1.3rem;
+  margin: 2rem 0;
+  font-size: .95rem;
+}
+.source .tag {
+  display: block;
+  font-family: var(--sans);
+  font-size: .64rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: .5rem;
+  font-weight: 600;
+}
+.source p:last-child { margin-bottom: 0; }
+
+/* ── Ask-your-teacher reminder ────────────────────────────── */
+
+.ask {
+  margin: 2.6rem 0 0;
+  padding: 1.1rem 1.3rem;
+  background: var(--rule-soft);
+  border-radius: 3px;
+  font-size: .93rem;
+}
+.ask p:last-child { margin-bottom: 0; }
+.ask strong { font-weight: 600; }
+
+/* ── Footer nav ───────────────────────────────────────────── */
+
+.lesson-nav {
+  margin-top: 3.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--rule);
+  font-family: var(--sans);
+  font-size: .8rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.4rem;
+}
+.lesson-nav a { border-bottom: none; }
+.lesson-nav a:hover { border-bottom: 1px solid var(--link); }
+.lesson-nav .nav-label { color: var(--muted); }
+
+/* ── Reference-sheet density (reference/*.html) ───────────── */
+
+/* Reference sheets are dense tables, not essays: full width, no margin
+   column, so any sidenote stacks inline rather than overlapping. */
+.refsheet { font-size: .95rem; }
+.refsheet .page, .refsheet .page > * { max-width: 66rem; }
+.refsheet .side {
+  float: none;
+  width: auto;
+  margin: 1.1rem 0;
+  padding-left: .85rem;
+  border-left: 2px solid var(--rule);
+}
+.refsheet h2 { margin-top: 2.2rem; }
+.refsheet table { font-size: .84rem; }
+
+/* ── Narrow screens: sidenotes become inline blocks ─────────
+   Threshold = .page (71rem) + body padding (3rem). Below this the page
+   would be squeezed while sidenotes still floated, overlapping the text. */
+
+@media (max-width: 74rem) {
+  body { padding: 2.2rem 1.15rem 4rem; }
+  /* Fixed-height plates would not shrink; hand sizing back to flex. */
+  .card-row.plate { flex-wrap: wrap; }
+  .card-row.plate > figure { flex: 1 1 8.5rem; max-width: 15rem; }
+  .card-row.plate img,
+  .card-row.plate svg { height: auto; width: 100%; }
+  /* Sidenotes stack from here down, so the margin column is dead weight:
+     collapse .page to the text measure instead of letting content reflow
+     to the full 71rem — which would read wider than the desktop layout.
+     .refsheet .page (0,2,0) still wins, keeping 66rem for dense tables. */
+  .page { max-width: 51rem; }
+  .page > *, .page > .wide, .refsheet .page > * { max-width: 100%; }
+  .side {
+    float: none;
+    width: auto;
+    margin: 1.1rem 0;
+    padding-left: .85rem;
+    border-left: 2px solid var(--rule);
+  }
+  h1 { font-size: 1.75rem; }
+}
+
+/* ── Print ────────────────────────────────────────────────── */
+
+@media print {
+  :root {
+    --paper: #fff;
+    --ink: #000;
+    --muted: #444;
+    --rule: #bbb;
+    --rule-soft: #e8e8e8;
+    --link: #000;
+    --documented: #16544a;
+    --documented-bg: #f3f7f5;
+    --invented: #7a4f10;
+    --invented-bg: #faf5ea;
+  }
+  body { padding: 0; font-size: 10.5pt; line-height: 1.45; }
+  .page, .page > *, .refsheet .page > * { max-width: 100%; }
+  .side {
+    float: none;
+    width: auto;
+    margin: .6rem 0;
+    padding-left: .7rem;
+    border-left: 1.5pt solid var(--rule);
+  }
+  h1 { font-size: 20pt; }
+  h2 { font-size: 13pt; margin-top: 1.3rem; }
+  a { text-decoration: none; }
+  a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 7.5pt; color: #555; word-break: break-all; }
+  .lesson-nav a[href^="http"]::after, .side a[href^="http"]::after { content: ""; }
+  figure, .callout, .source, table, .quiz-q, .handson > li { break-inside: avoid; page-break-inside: avoid; }
+  h2, h3 { break-after: avoid; page-break-after: avoid; }
+  .drill-reset, .lesson-nav, .score { display: none; }
+  .why { display: block; }          /* answers print, so the sheet is self-contained */
+  .card-row img { box-shadow: none; }
+  /* Same reset as the narrow breakpoint: a fixed plate height fighting
+     max-width:100% on a narrow page would squash the cards' aspect ratio. */
+  .card-row.plate { flex-wrap: wrap; }
+  .card-row.plate > figure { flex: 1 1 8.5rem; max-width: 15rem; }
+  .card-row.plate img,
+  .card-row.plate svg { height: auto; width: 100%; }
+}
