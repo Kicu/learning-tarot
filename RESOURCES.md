@@ -34,8 +34,16 @@ Curated, high-trust only. Tarot has an unusually bad signal-to-noise ratio: most
 
 ## Knowledge — Occult primary documents
 
-- [Golden Dawn, _Book T — The Tarot_ (c. 1888–96), full text at hermetic.com](https://hermetic.com/gdlibrary/book-t)
+- [Golden Dawn, _Book T — The Tarot_ (c. 1888–96), full text at hermetic.com](https://hermetic.com/gdlibrary/book-t) · [HTML mirror](https://www.mr-kaplan.com/Library/Mathers/Book-T.html)
+  (hermetic.com blocks automated fetches — the mirror is the checkable copy.)
   The order's internal tarot curriculum: suit–element assignments, card titles, astrological attributions. **A primary source for layer-2 doctrine, not for history** — cite it to show who asserted a correspondence and when. Use for: any "where does that meaning come from" question whose answer is "the Golden Dawn."
+
+## Knowledge — Polish terminology
+
+- [Wikipedia PL — Tarot](https://pl.wikipedia.org/wiki/Tarot) · [Wielkie Arkana](https://pl.wikipedia.org/wiki/Wielkie_Arkana) · [Małe Arkana](https://pl.wikipedia.org/wiki/Ma%C5%82e_Arkana)
+  The most consistent published inventory of Polish card names and their variants (Buławy/Kije/Różdżki, Paź/Walet/Giermek, etc.). Use for: checking what a Polish book is likely to call a card. Distilled into `reference/polish-glossary.html`.
+- [SJP PWN — _arkana_](https://sjp.pwn.pl/szukaj/arkana.html)
+  Dictionary grounding for the word itself: plurale tantum, "secrets known only to experts," from Latin _arcanum_. Use for: the language note on singular _arkan_ being a tarot-literature back-formation.
 
 ## Knowledge — Card images
 
