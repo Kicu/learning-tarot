@@ -29,7 +29,7 @@ Not yet promoted to `GLOSSARY.md` — glossary entries are only added once Mateu
 1. **Where tarot comes from** — three historical layers; the Magician as case study. ← built
 2. **Deck anatomy** — 22 + 56, the four suits and their elements, court ranks. Hands-on sorting. ← built (with `reference/deck-map.html`)
 3. **The four suits as four kinds of problem** — Wands/Cups/Swords/Pentacles; how suit alone constrains meaning. ← built (kind-not-topic is the load-bearing idea; work = Wands vs Pentacles, love = Cups vs Swords pairs)
-4. **Numbers 1–10 as a narrative arc** — read a suit card you have never seen from number + suit alone. ← built (ten-chapter table; fives/sixes/tens titles as evidence; Six of Swords as the worked prediction)
+4. **Numbers 1–10 as a narrative arc** — read a suit card you have never seen from number + suit alone. ← built (ten-chapter table; fives/sixes/tens titles as evidence; Six of Swords as the worked prediction). Revised 2026-08-09 at Mateusz's request: chapter names are now the order's own words (Ace "root" from Book T; 2–10 from the Sub Spe manuscript: Initiation, Resultant, Realization, Opposition, Accomplishment, Skill and courage, Solitary success, Fundamental force, Completed force), the table carries a Sephira column (Kether · Crown … Malkuth · Kingdom), and row 1 is labelled Ace. He prefers traditional sourcing over my invented teaching labels — keep that in mind for future tables.
 5. **Court cards** — the four ranks as postures toward the suit's material.
 6. **Trumps I–XI** then **XII–XXI + Fool** — in two lessons, using the layer decoder.
 7. **Reversals** — and the honest case that they are optional. Waite's own position.
@@ -42,4 +42,4 @@ Not yet promoted to `GLOSSARY.md` — glossary entries are only added once Mateu
 
 ## Open questions to revisit
 - Does he want reversals at all? Many strong readers skip them. Ask at lesson 7.
-- Community: not yet raised. Suggest r/tarot after lesson 3 or 4, once he has enough vocabulary to not get generic beginner answers.
+- Community: r/tarot suggested 2026-08-11, prompted by his question on how suit mood weighs on a live reading (learning record 0003). No response yet — don't push, but if he mentions visiting, ask what surprised him.
