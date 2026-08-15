@@ -11,6 +11,15 @@ Curated, high-trust only. Tarot has an unusually bad signal-to-noise ratio: most
 - [Antoine Court de Gébelin, _Le Monde primitif_ vol. VIII (1781) — context and translation](https://waitesmith.org/index.php/pre-history/antoine-court-de-gebelin/court-de-gebelin/)
   The document that invented the Egyptian origin myth. Use for: seeing exactly how thin the original claim was.
 
+## Knowledge — Primary documents, divinatory meanings
+
+- [S. L. MacGregor Mathers, _The Tarot_ (1888) — full text via Wayback Machine](https://web.archive.org/web/20250714191949/https://sacred-texts.com/tarot/mathers/mtar03.htm)
+  The pamphlet that carried Etteilla's 1780s card meanings into English occultism — Mathers' own words: "chiefly taken from Etteilla." Use for: showing that pip meanings predate the Golden Dawn's formula, and as the near-verbatim source of many of Waite's printed lists.
+- [Eden Gray, _A Complete Guide to the Tarot_ (1970) — Internet Archive](https://archive.org/details/completeguidetot00gray)
+  The book that taught the post-1969 boom to read RWS scenes literally. Use for: the hinge between Waite's word-lists and today's meanings — her Seven of Swords entry is where "make away with what is not yours" enters the tradition.
+- [Biddy Tarot](https://www.biddytarot.com/tarot-card-meanings/) · [Labyrinthos](https://labyrinthos.co/blogs/tarot-card-meanings-list)
+  Not scholarship — the barometer of what a card means to today's mainstream. Use for: checking where a century of scene-reading has landed, before explaining how it got there.
+
 ## Knowledge — History and scholarship
 
 - [Michael Dummett, _The Game of Tarot: From Ferrara to Salt Lake City_ (1980)](https://www.weiserantiquarian.com/pages/books/72742/michael-dummett-with-the-assistance-of-sylvia-mann/the-game-of-tarot-from-ferrara-to-salt-lake-city)
@@ -29,6 +38,20 @@ Curated, high-trust only. Tarot has an unusually bad signal-to-noise ratio: most
   Edition-by-edition documentation of the 1909 deck and its printings. Use for: which version of the deck an image comes from.
 - [Hyperallergic — "The Unsung Woman Artist Behind Your Tarot Cards"](https://hyperallergic.com/the-unnamed-woman-artist-revealed-in-the-monogram-of-your-tarot-cards/)
   On Pamela Colman Smith's authorship and erasure. Use for: the Smith attribution question.
+- [James W. Revak, "The Influence of Etteilla & His School on Mathers & Waite" (2000)](https://www.villarevak.org/emw/emw_1.htm)
+  Quantified card-by-card comparison of Etteilla-school, Mathers and Waite divinatory meanings: 49% of Waite's meanings strongly match the Etteilla school ([results](https://www.villarevak.org/emw/emw_12.htm)). Use for: the documented answer to "where did Waite's minor meanings come from."
+- [Tarot Heritage — "The Rider Waite Smith Deck"](https://tarot-heritage.com/history-4/the-rider-waite-smith-deck/)
+  Careful short history of the deck's making; source of the "hodge-podge of influences" summary (Etteilla, Book T, Sola Busca, Smith's imagination). Use for: the one-page account of the minors' mixed ancestry.
+- [Auntie Tarot — "Golden Dawn meanings & the Waite-Smith tarot deck" (2012)](https://auntietarot.wordpress.com/2012/02/05/golden-dawn-meanings-the-waite-smith-tarot-deck/)
+  A Golden Dawn-literate reader demonstrating card by card that Smith's images do not encode Book T's meanings. Use for: the practitioner's case that formula and picture genuinely diverge.
+- [Wikipedia — Sola Busca tarot](https://en.wikipedia.org/wiki/Sola_Busca_tarot) · [Commons — Sola-Busca tarot deck (all 78 scans)](https://commons.wikimedia.org/wiki/Category:Sola-Busca_tarot_deck)
+  The c. 1491 engraved deck, the only fully illustrated Renaissance tarot, and the visual source of several RWS minors (Three and Seven of Swords above all; Ten of Wands from its Ten of Swords). Use for: side-by-side comparisons; images are public domain.
+- [A. M. Hind, _Catalogue of Early Italian Engravings in the British Museum_ (1910), pp. 257–266](https://doi.org/10.11588/diglit.67657)
+  The primary document for Smith's possible access: records the complete set of Sola Busca reproductions "presented to the Museum by Count Sola in 1907" (registered 23 Oct 1907). Heidelberg's digitization needs a real browser (JS gate). Note: the popular "exhibited in 1908" and "23 originals since 1845" claims are NOT in Hind — the BM bought only four original impressions in 1845, and no exhibition is documented.
+- [K. F. Jensen, "The Early Waite-Smith Tarot Editions" (_The Playing Card_ 34/1, 2005) — PDF via Wayback](https://web.archive.org/web/20060721004631/http://www.manteia-online.dk/wst-ipcs/wst-ipcs.pdf)
+  The most careful single account of the deck's production: the Stieglitz letter ("a big task of 80 illustrations for a very small payment"), the Occult Review announcement, the memoir quotes, and a properly hedged verdict on the Sola Busca inspiration. Use for: any production-history question about 1909.
+- [House of White — Sola Busca vs Waite-Smith side-by-side gallery](http://waitesmith.org/index.php/2015/09/13/sola-busca-vs-waite-smith/)
+  Nineteen image pairs graded from exact to loose, explicitly framed as similarity rather than proven causality. Use for: judging each claimed borrowing with your own eyes.
 - [Wikipedia — Mamluk playing cards](https://en.wikipedia.org/wiki/Mamluk_playing_cards)
   The Topkapı pack and the cups/coins/swords/polo-sticks suit system Europe imported in the 1370s. Well-sourced overview; follow its citations for depth. Use for: where the four suit signs came from. (The World of Playing Cards page on this 404s — do not cite it.)
 
@@ -63,8 +86,16 @@ Curated, high-trust only. Tarot has an unusually bad signal-to-noise ratio: most
 
 _Not yet raised with Mateusz. Plan: suggest r/tarot around lesson 3–4, once he has enough vocabulary to ask a question that gets a good answer rather than a beginner boilerplate reply._
 
+## Knowledge — Practitioner teaching (vetted 2026-08-13)
+
+- Rachel Pollack, _Seventy-Eight Degrees of Wisdom_ (1980/1997) — no stable free text to link; cite the book.
+  Vetted: the flagship of image-first RWS reading, and honest about the system's seams ("the picture almost contradicts the meaning" on the Two of Swords; "Pamela Smith has given us something to interpret"). Use for: how a serious reader actually works with Smith's scenes. Interpretive, not historical — label accordingly.
+- [Joan Bunning, Learn Tarot — free 19-lesson course (via Wayback Machine)](https://web.archive.org/web/20231208182605/http://www.learntarot.com/s7.htm)
+  The live site currently refuses connections; Wayback copies work. Image-first with a light suit × rank scaffold. Use for: a second opinion on any number card, free and sane.
+- [Yoav Ben-Dov, CBD Tarot de Marseille](https://www.cbdtarot.com/)
+  The serious number+suit school — Marseille pips, no Kabbalah, free materials. Out of mission scope except as contrast: shows what pip reading looks like when there are no scenes for the numbers to disagree with.
+
 ## Gaps
 
-- **No trusted single volume on RWS symbolism yet.** Rachel Pollack's _Seventy-Eight Degrees of Wisdom_ and Waite's own _Pictorial Key_ are the usual recommendations; Pollack is insightful but interpretive rather than historical, and needs vetting before I put it on this list.
-- **Smith's own sources are under-documented.** Her visual borrowings (Sola-Busca deck for several suit cards, theatre design, Yeats's circle) are asserted more often than demonstrated. Needs a real source before I teach it as fact.
+- **Smith's borrowings: largely resolved (2026-08-13).** Access documented (Hind 1910: BM photographs from Count Sola, Oct 1907); visual parallels demonstrated side by side (lesson 5); Smith actually seeing the photographs remains inference (Jensen's hedge is the honest formula). Still open: the theatre/portrait influences (Parsons' Ellen Terry identification) rest on print sources not yet vetted — _Pamela Colman Smith: The Untold Story_ (2018) is the book to check before teaching them.
 - **No good video resource identified.** Worth searching if Mateusz prefers watching to reading.
