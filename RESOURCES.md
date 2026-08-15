@@ -95,6 +95,24 @@ _Not yet raised with Mateusz. Plan: suggest r/tarot around lesson 3–4, once he
 - [Yoav Ben-Dov, CBD Tarot de Marseille](https://www.cbdtarot.com/)
   The serious number+suit school — Marseille pips, no Kabbalah, free materials. Out of mission scope except as contrast: shows what pip reading looks like when there are no scenes for the numbers to disagree with.
 
+## Knowledge — Decks beyond the RWS (vetted 2026-08-15)
+
+Research behind `reference/decks-beyond-rws.html`; per-deck product and review links live in that sheet.
+
+- [Wikipedia — Tarot of Marseilles](https://en.wikipedia.org/wiki/Tarot_of_Marseilles) · [Tarot Heritage — The Tarot de Marseilles](https://tarot-heritage.com/history-4/the-tarot-de-marseilles/)
+  Pattern lineage: Noblet c. 1650, Conver 1760 ("became the standard deck in France"), Marteau's 1930 Grimaud edition. Use for: any Marseille question; pair with Ben-Dov's CBD site above for the reading method.
+- [Wikipedia — Thoth tarot deck](https://en.wikipedia.org/wiki/Thoth_tarot_deck) · [Aeclectic review](https://www.aeclectic.net/tarot/cards/aleister-crowley-thoth/)
+  Painted 1938–43 by Frieda Harris, published posthumously (1968 monochrome first printing; the deck proper 1969). Card table confirms the pip keywords descend from Book T with Crowley's renamings — Unstable Effort→Futility, Abandoned Success→Indolence. Use for: showing Book T printed on card stock.
+- [Wikipedia — Visconti-Sforza tarot deck](https://en.wikipedia.org/wiki/Visconti-Sforza_tarot_deck)
+  c. 1451 Milan; 74 survivors split between the Morgan Library, the Accademia Carrara and the Colleoni collection. Use for: what a luxury pre-divination deck was; complements the Commons scans above.
+- [Aeclectic Tarot — Top Ten Decks, community votes 1999–2013](https://www.aeclectic.net/tarot/cards/topten.shtml)
+  The only long-run popularity data that isn't marketing: RWS #1, Thoth #2, Shadowscapes #3, Deviant Moon #4, Wild Unknown #7 all-time. Use for: popularity claims with a source attached.
+- [Publishers Weekly (2016) — Wild Unknown ~50,000 self-published units](https://www.publishersweekly.com/pw/by-topic/new-titles/adult-announcements/article/71126-new-mind-body-spirit-books-for-fall.html) · [NYT News Service via Seattle Times (2017) — tarot sales up 30%/yr](https://www.seattletimes.com/explore/shop-northwest/tarot-is-back-but-with-a-different-look/)
+  The two dated, named-source numbers behind the modern deck boom. Use for: citable sales evidence.
+- [Hyperallergic (2019) — "more than 100 million copies … in circulation in over 20 countries"](https://hyperallergic.com/pamela-colman-smith-pratt-institute-libraries/)
+  The citable form of the RWS popularity claim — a publisher-traced circulation estimate, not an audited figure; Wikipedia's own citation points here. Use for: the headline number, labelled honestly.
+- Fetch notes: usgamesinc.com 403-blocks automated fetches (verify its product pages via Wayback snapshots); liminal11.com was unreachable throughout — Modern Witch's "400,000 copies" figure stays unverified, do not cite it.
+
 ## Gaps
 
 - **Smith's borrowings: largely resolved (2026-08-13).** Access documented (Hind 1910: BM photographs from Count Sola, Oct 1907); visual parallels demonstrated side by side (lesson 5); Smith actually seeing the photographs remains inference (Jensen's hedge is the honest formula). Still open: the theatre/portrait influences (Parsons' Ellen Terry identification) rest on print sources not yet vetted — _Pamela Colman Smith: The Untold Story_ (2018) is the book to check before teaching them.
