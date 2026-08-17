@@ -54,6 +54,8 @@ Curated, high-trust only. Tarot has an unusually bad signal-to-noise ratio: most
   Nineteen image pairs graded from exact to loose, explicitly framed as similarity rather than proven causality. Use for: judging each claimed borrowing with your own eyes.
 - [Wikipedia — Mamluk playing cards](https://en.wikipedia.org/wiki/Mamluk_playing_cards)
   The Topkapı pack and the cups/coins/swords/polo-sticks suit system Europe imported in the 1370s. Well-sourced overview; follow its citations for depth. Use for: where the four suit signs came from. (The World of Playing Cards page on this 404s — do not cite it.)
+- [Wikipedia — Knight (playing card)](https://en.wikipedia.org/wiki/Knight_(playing_card))
+  Sourced to Parlett: in Latin-suited packs the knight "replaces the queen, nonexistent in these packs" — king, knight, knave is the ordinary court, and tarot's queen is the addition. Use for: the court cards' game ancestry (lesson 6).
 
 ## Knowledge — Occult primary documents
 
@@ -92,6 +94,8 @@ _Not yet raised with Mateusz. Plan: suggest r/tarot around lesson 3–4, once he
   Vetted: the flagship of image-first RWS reading, and honest about the system's seams ("the picture almost contradicts the meaning" on the Two of Swords; "Pamela Smith has given us something to interpret"). Use for: how a serious reader actually works with Smith's scenes. Interpretive, not historical — label accordingly.
 - [Joan Bunning, Learn Tarot — free 19-lesson course (via Wayback Machine)](https://web.archive.org/web/20231208182605/http://www.learntarot.com/s7.htm)
   The live site currently refuses connections; Wayback copies work. Image-first with a light suit × rank scaffold. Use for: a second opinion on any number card, free and sane.
+- [Biddy Tarot — Court Card Meanings In-Depth: Kings](https://biddytarot.com/blog/court-cards-kings/)
+  The modern rank ladder in its mainstream form: "Pages conceive ideas, Knights act upon ideas, Queens nurture ideas and now Kings develop those ideas to an established and stable state." Not scholarship — the citable statement of today's consensus court framework (lesson 6).
 - [Yoav Ben-Dov, CBD Tarot de Marseille](https://www.cbdtarot.com/)
   The serious number+suit school — Marseille pips, no Kabbalah, free materials. Out of mission scope except as contrast: shows what pip reading looks like when there are no scenes for the numbers to disagree with.
 
