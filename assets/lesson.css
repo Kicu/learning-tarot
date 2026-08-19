@@ -38,7 +38,7 @@ html { -webkit-text-size-adjust: 100%; }
 body {
   background: var(--paper);
   color: var(--ink);
-  font-family: var(--serif);
+  font-family: var(--serif), serif;
   font-size: 1.0625rem;
   line-height: 1.62;
   margin: 0;
@@ -81,7 +81,7 @@ h3 {
 }
 
 .kicker {
-  font-family: var(--sans);
+  font-family: var(--sans), sans-serif;
   font-size: .68rem;
   letter-spacing: .16em;
   text-transform: uppercase;
@@ -113,7 +113,7 @@ strong { font-weight: 600; }
   margin: 0 0 2.4rem;
 }
 .win .win-label {
-  font-family: var(--sans);
+  font-family: var(--sans), sans-serif;
   font-size: .66rem;
   letter-spacing: .15em;
   text-transform: uppercase;
@@ -134,7 +134,7 @@ strong { font-weight: 600; }
   clear: right;
   width: 16rem;
   margin: .35rem 0 .9rem 1.5rem;
-  font-family: var(--sans);
+  font-family: var(--sans), sans-serif;
   font-size: .76rem;
   line-height: 1.5;
   color: var(--muted);
@@ -153,7 +153,7 @@ strong { font-weight: 600; }
 .callout p:last-child { margin-bottom: 0; }
 .callout .tag {
   display: block;
-  font-family: var(--sans);
+  font-family: var(--sans), sans-serif;
   font-size: .64rem;
   letter-spacing: .14em;
   text-transform: uppercase;
@@ -173,7 +173,7 @@ figure { margin: 2.2rem 0; }
 figure img, figure svg { max-width: 100%; height: auto; display: block; }
 
 figcaption {
-  font-family: var(--sans);
+  font-family: var(--sans), sans-serif;
   font-size: .76rem;
   line-height: 1.5;
   color: var(--muted);
@@ -227,7 +227,7 @@ th, td {
   border-bottom: 1px solid var(--rule-soft);
 }
 th {
-  font-family: var(--sans);
+  font-family: var(--sans), sans-serif;
   font-size: .68rem;
   letter-spacing: .1em;
   text-transform: uppercase;
@@ -255,7 +255,7 @@ tbody tr:last-child td { border-bottom: none; }
   height: 1.6rem;
   border: 1px solid var(--rule);
   border-radius: 50%;
-  font-family: var(--sans);
+  font-family: var(--sans), sans-serif;
   font-size: .74rem;
   display: flex;
   align-items: center;
@@ -300,7 +300,7 @@ tbody tr:last-child td { border-bottom: none; }
 .quiz-q.done .why { display: block; }
 
 .score {
-  font-family: var(--sans);
+  font-family: var(--sans), sans-serif;
   font-size: .78rem;
   color: var(--muted);
   border-top: 1px solid var(--rule);
@@ -339,14 +339,14 @@ tbody tr:last-child td { border-bottom: none; }
   content: counter(built);
   position: absolute;
   left: .7rem;
-  font-family: var(--sans);
+  font-family: var(--sans), sans-serif;
   font-size: .72rem;
   color: var(--muted);
 }
-.order-built .yr-reveal { font-family: var(--sans); font-size: .74rem; color: var(--documented); font-weight: 600; margin-left: .4rem; }
+.order-built .yr-reveal { font-family: var(--sans), sans-serif; font-size: .74rem; color: var(--documented); font-weight: 600; margin-left: .4rem; }
 
 .drill-reset {
-  font-family: var(--sans);
+  font-family: var(--sans), sans-serif;
   font-size: .72rem;
   letter-spacing: .06em;
   text-transform: uppercase;
@@ -359,6 +359,53 @@ tbody tr:last-child td { border-bottom: none; }
 }
 .drill-reset:hover { border-color: var(--ink); color: var(--ink); }
 
+/* ── Flashcard drill (assets/flashcards.js) ───────────────── */
+
+.flash { margin: 1.8rem 0; }
+.flash-decks { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 1rem; }
+.flash-stage {
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  padding: 2rem 1.5rem;
+  min-height: 13rem;
+  text-align: center;
+}
+.flash-name {
+  font-size: 1.45rem;
+  margin: 0 0 .9rem;
+  letter-spacing: -0.01em;
+}
+.flash-hint {
+  font-family: var(--sans), sans-serif;
+  font-size: .8rem;
+  color: var(--muted);
+  margin: 0 0 1.3rem;
+}
+.flash-main { font-size: .8rem; padding: .55rem 1.4rem; }
+.flash-back { text-align: left; max-width: 34rem; margin: 0 auto 1.3rem; }
+.flash-line { font-size: .95rem; margin: 0 0 .6rem; }
+.flash-label {
+  display: block;
+  font-family: var(--sans), sans-serif;
+  font-size: .62rem;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-weight: 600;
+  margin-bottom: .1rem;
+}
+.flash-actions { display: flex; justify-content: center; gap: .7rem; }
+.flash-knew { border-color: var(--documented); color: var(--documented); }
+.flash-knew:hover { border-color: var(--documented); color: var(--documented); background: var(--documented-bg); }
+.flash-missed { border-color: #b3543f; color: #b3543f; }
+.flash-missed:hover { border-color: #b3543f; color: #b3543f; background: rgba(179,84,63,.09); }
+.flash-progress {
+  font-family: var(--sans), sans-serif;
+  font-size: .76rem;
+  color: var(--muted);
+  margin-top: .7rem;
+}
+
 /* ── Source recommendation ────────────────────────────────── */
 
 .source {
@@ -370,7 +417,7 @@ tbody tr:last-child td { border-bottom: none; }
 }
 .source .tag {
   display: block;
-  font-family: var(--sans);
+  font-family: var(--sans), sans-serif;
   font-size: .64rem;
   letter-spacing: .14em;
   text-transform: uppercase;
@@ -398,7 +445,7 @@ tbody tr:last-child td { border-bottom: none; }
   margin-top: 3.5rem;
   padding-top: 1rem;
   border-top: 1px solid var(--rule);
-  font-family: var(--sans);
+  font-family: var(--sans), sans-serif;
   font-size: .8rem;
   display: flex;
   flex-wrap: wrap;
@@ -422,7 +469,7 @@ tbody tr:last-child td { border-bottom: none; }
   border-left: 2px solid var(--rule);
 }
 .refsheet h2 { margin-top: 2.2rem; }
-.refsheet table { font-size: .84rem; }
+.refsheet table { font-size: .95rem; }
 
 /* ── Narrow screens: sidenotes become inline blocks ─────────
    Threshold = .page (71rem) + body padding (3rem). Below this the page
@@ -482,7 +529,7 @@ tbody tr:last-child td { border-bottom: none; }
   .lesson-nav a[href^="http"]::after, .side a[href^="http"]::after { content: ""; }
   figure, .callout, .source, table, .quiz-q, .handson > li { break-inside: avoid; page-break-inside: avoid; }
   h2, h3 { break-after: avoid; page-break-after: avoid; }
-  .drill-reset, .lesson-nav, .score { display: none; }
+  .drill-reset, .lesson-nav, .score, .flash { display: none; }
   .why { display: block; }          /* answers print, so the sheet is self-contained */
   .card-row img { box-shadow: none; }
   /* Same reset as the narrow breakpoint: a fixed plate height fighting
