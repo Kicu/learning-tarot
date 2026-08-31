@@ -1,31 +1,38 @@
-/* Shared stylesheet for all tarot lessons and reference sheets.
-   Tufte-influenced: one narrow text column, sidenotes in the margin, prints cleanly. */
-
 :root {
-  --paper: #fdfcf7;
-  --ink: #211f1a;
-  --muted: #6f6857;
-  --rule: #ded8c8;
+  --color-paper: #fdfcf7;
+  --color-ink: #211f1a;
+  --color-muted: #6f6857;
+  --color-rule: #ded8c8;
   --rule-soft: #ece7da;
-  --link: #7a3b2e;
-  --documented: #2f6b5f;
-  --documented-bg: #f0f6f3;
+  --color-link: #7a3b2e;
+  --color-documented: #2f6b5f;
+  --color-documented-bg: #f0f6f3;
   --invented: #96631a;
   --invented-bg: #fbf4e6;
-  --serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
-  --sans: "Avenir Next", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --f-serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  --f-sans: "Avenir Next", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --fs-h1: 2.1rem;
+  --fs-h2: 1.4rem;
+  --fs-subtitle: 1.2rem;
+  --fs-h3: 1.1rem;
+  --fs-body: 1.0625rem;   /* running text */
+  --fs-note: .95rem;      /* callouts, drills, boxed asides */
+  --fs-small: .9rem;      /* tables, explanations */
+  --fs-meta: .78rem;      /* sidenotes, captions, nav */
+  --fs-ui: .75rem;        /* buttons, counters */
+  --fs-tag: .66rem;       /* uppercase micro-labels */
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --paper: #17161a;
-    --ink: #e6e1d6;
-    --muted: #9b9484;
-    --rule: #38352e;
+    --color-paper: #17161a;
+    --color-ink: #e6e1d6;
+    --color-muted: #9b9484;
+    --color-rule: #38352e;
     --rule-soft: #26241f;
-    --link: #d99a84;
-    --documented: #6fbfa8;
-    --documented-bg: #1a2523;
+    --color-link: #d99a84;
+    --color-documented: #6fbfa8;
+    --color-documented-bg: #1a2523;
     --invented: #d9ad63;
     --invented-bg: #262015;
   }
@@ -36,19 +43,17 @@
 html { -webkit-text-size-adjust: 100%; }
 
 body {
-  background: var(--paper);
-  color: var(--ink);
-  font-family: var(--serif), serif;
-  font-size: 1.0625rem;
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--f-serif), serif;
+  font-size: var(--fs-body);
   line-height: 1.62;
   margin: 0;
   padding: 4rem 4rem 4rem 12rem;
   -webkit-font-smoothing: antialiased;
 }
 
-/* ── Layout ─────────────────────────────────────────────────
-   Invariant: 51rem text + 4rem gutter + 16rem sidenote = 71rem .page;
-   the narrow breakpoint below = .page + 3rem. */
+/* ── Layout ───────────────────────────────────────────────── */
 
 .page { max-width: 71rem; margin: 0 auto; }
 .page > * { max-width: 51rem; }
@@ -59,45 +64,45 @@ body {
 h1, h2, h3, h4 { font-weight: 400; line-height: 1.2; }
 
 h1 {
-  font-size: 2.1rem;
+  font-size: var(--fs-h1);
   margin: 0 0 .3rem;
   letter-spacing: -0.012em;
 }
 
 h2 {
-  font-size: 1.4rem;
+  font-size: var(--fs-h2);
   margin: 3.2rem 0 .9rem;
   padding-top: .85rem;
-  border-top: 1px solid var(--rule);
+  border-top: 1px solid var(--color-rule);
 }
 
 h3 {
-  font-size: 1.1rem;
+  font-size: var(--fs-h3);
   margin: 2rem 0 .5rem;
   font-style: italic;
 }
 
 .kicker {
-  font-family: var(--sans), sans-serif;
-  font-size: .68rem;
+  font-family: var(--f-sans), sans-serif;
+  font-size: var(--fs-tag);
   letter-spacing: .16em;
   text-transform: uppercase;
-  color: var(--muted);
+  color: var(--color-muted);
   margin: 0 0 1.1rem;
 }
 
 .subtitle {
-  font-size: 1.2rem;
+  font-size: var(--fs-subtitle);
   font-style: italic;
-  color: var(--muted);
+  color: var(--color-muted);
   margin: 0 0 2rem;
   line-height: 1.4;
 }
 
 p { margin: 0 0 1.1rem; }
 
-a { color: var(--link); text-decoration: none; border-bottom: 1px solid var(--rule); }
-a:hover { border-bottom-color: var(--link); }
+a { color: var(--color-link); text-decoration: none; border-bottom: 1px solid var(--color-rule); }
+a:hover { border-bottom-color: var(--color-link); }
 
 em { font-style: italic; }
 strong { font-weight: 600; }
@@ -105,20 +110,21 @@ strong { font-weight: 600; }
 /* ── The win box: what this lesson buys you ───────────────── */
 
 .win {
-  border-left: 3px solid var(--ink);
+  border-left: 3px solid var(--color-ink);
   padding: .1rem 0 .1rem 1.1rem;
   margin: 0 0 2.4rem;
 }
+
 .win .win-label {
-  font-family: var(--sans), sans-serif;
-  font-size: .66rem;
+  font-family: var(--f-sans), sans-serif;
+  font-size: var(--fs-tag);
   letter-spacing: .15em;
   text-transform: uppercase;
-  color: var(--muted);
+  color: var(--color-muted);
   display: block;
   margin-bottom: .35rem;
 }
-.win p { margin: 0; font-size: 1.05rem; }
+.win p { margin: 0; }
 
 /* ── Sidenotes ──────────────────────────────────────────────
    Must be DIRECT children of .page (never inside a <p>), placed just
@@ -129,10 +135,10 @@ strong { font-weight: 600; }
   clear: right;
   width: 16rem;
   margin: .35rem 0 .9rem 1.5rem;
-  font-family: var(--sans), sans-serif;
-  font-size: .76rem;
+  font-family: var(--f-sans), sans-serif;
+  font-size: var(--fs-meta);
   line-height: 1.5;
-  color: var(--muted);
+  color: var(--color-muted);
 }
 .side a { font-size: inherit; }
 
@@ -143,20 +149,20 @@ strong { font-weight: 600; }
   padding: 1rem 1.2rem;
   border-left: 3px solid;
   border-radius: 2px;
-  font-size: .95rem;
+  font-size: var(--fs-note);
 }
 .callout p:last-child { margin-bottom: 0; }
 .callout .tag {
   display: block;
-  font-family: var(--sans), sans-serif;
-  font-size: .64rem;
+  font-family: var(--f-sans), sans-serif;
+  font-size: var(--fs-tag);
   letter-spacing: .14em;
   text-transform: uppercase;
   margin-bottom: .45rem;
   font-weight: 600;
 }
-.callout.documented { border-color: var(--documented); background: var(--documented-bg); }
-.callout.documented .tag { color: var(--documented); }
+.callout.documented { border-color: var(--color-documented); background: var(--color-documented-bg); }
+.callout.documented .tag { color: var(--color-documented); }
 .callout.invented { border-color: var(--invented); background: var(--invented-bg); }
 .callout.invented .tag { color: var(--invented); }
 
@@ -167,10 +173,10 @@ figure { margin: 2.2rem 0; }
 figure img, figure svg { max-width: 100%; height: auto; display: block; }
 
 figcaption {
-  font-family: var(--sans), sans-serif;
-  font-size: .76rem;
+  font-family: var(--f-sans), sans-serif;
+  font-size: var(--fs-meta);
   line-height: 1.5;
-  color: var(--muted);
+  color: var(--color-muted);
   margin-top: .7rem;
 }
 
@@ -182,7 +188,7 @@ figcaption {
 }
 .card-row > figure { margin: 0; flex: 1 1 10rem; min-width: 8.5rem; max-width: 15rem; }
 .card-row img {
-  border: 1px solid var(--rule);
+  border: 1px solid var(--color-rule);
   border-radius: 3px;
   box-shadow: 0 1px 5px rgba(0,0,0,.09);
 }
@@ -198,7 +204,7 @@ figcaption {
 .card-row .yr {
   display: block;
   font-weight: 600;
-  color: var(--ink);
+  color: var(--color-ink);
   letter-spacing: .04em;
 }
 
@@ -207,7 +213,7 @@ figcaption {
 table {
   border-collapse: collapse;
   width: 100%;
-  font-size: .9rem;
+  font-size: var(--fs-small);
   margin: 1.8rem 0;
 }
 th, td {
@@ -217,13 +223,13 @@ th, td {
   border-bottom: 1px solid var(--rule-soft);
 }
 th {
-  font-family: var(--sans), sans-serif;
-  font-size: .68rem;
+  font-family: var(--f-sans), sans-serif;
+  font-size: var(--fs-tag);
   letter-spacing: .1em;
   text-transform: uppercase;
-  color: var(--muted);
+  color: var(--color-muted);
   font-weight: 600;
-  border-bottom: 1px solid var(--rule);
+  border-bottom: 1px solid var(--color-rule);
 }
 tbody tr:last-child td { border-bottom: none; }
 
@@ -243,14 +249,14 @@ tbody tr:last-child td { border-bottom: none; }
   top: .08rem;
   width: 1.6rem;
   height: 1.6rem;
-  border: 1px solid var(--rule);
+  border: 1px solid var(--color-rule);
   border-radius: 50%;
-  font-family: var(--sans), sans-serif;
-  font-size: .74rem;
+  font-family: var(--f-sans), sans-serif;
+  font-size: var(--fs-ui);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--muted);
+  color: var(--color-muted);
 }
 
 /* ── Quiz widget (assets/quiz.js) ─────────────────────────── */
@@ -260,40 +266,40 @@ tbody tr:last-child td { border-bottom: none; }
 .quiz-q > .prompt { font-weight: 600; margin-bottom: .7rem; }
 .quiz-opts { list-style: none; padding: 0; margin: 0; }
 .quiz-opts li {
-  border: 1px solid var(--rule);
+  border: 1px solid var(--color-rule);
   border-radius: 3px;
   padding: .5rem .8rem;
   margin-bottom: .4rem;
   cursor: pointer;
-  font-size: .95rem;
+  font-size: var(--fs-note);
   transition: background .12s, border-color .12s;
   user-select: none;
 }
 .quiz-opts li:hover { background: var(--rule-soft); }
-.quiz-opts li.picked-right { border-color: var(--documented); background: var(--documented-bg); font-weight: 600; }
+.quiz-opts li.picked-right { border-color: var(--color-documented); background: var(--color-documented-bg); font-weight: 600; }
 .quiz-opts li.picked-wrong { border-color: #b3543f; background: rgba(179,84,63,.09); text-decoration: line-through; }
-.quiz-opts li.reveal { border-color: var(--documented); }
+.quiz-opts li.reveal { border-color: var(--color-documented); }
 .quiz-q.done .quiz-opts li { cursor: default; }
 .quiz-q.done .quiz-opts li:hover { background: none; }
 .quiz-q.done .quiz-opts li.picked-wrong:hover { background: rgba(179,84,63,.09); }
 .quiz-q.done .quiz-opts li.picked-right:hover,
-.quiz-q.done .quiz-opts li.reveal:hover { background: var(--documented-bg); }
+.quiz-q.done .quiz-opts li.reveal:hover { background: var(--color-documented-bg); }
 
 .why {
   display: none;
   margin-top: .6rem;
   padding-left: .85rem;
-  border-left: 2px solid var(--rule);
-  font-size: .88rem;
-  color: var(--muted);
+  border-left: 2px solid var(--color-rule);
+  font-size: var(--fs-small);
+  color: var(--color-muted);
 }
 .quiz-q.done .why { display: block; }
 
 .score {
-  font-family: var(--sans), sans-serif;
-  font-size: .78rem;
-  color: var(--muted);
-  border-top: 1px solid var(--rule);
+  font-family: var(--f-sans), sans-serif;
+  font-size: var(--fs-meta);
+  color: var(--color-muted);
+  border-top: 1px solid var(--color-rule);
   padding-top: .8rem;
 }
 
@@ -302,12 +308,12 @@ tbody tr:last-child td { border-bottom: none; }
 .order { margin: 1.8rem 0; }
 .order-pool { list-style: none; padding: 0; margin: 0 0 1rem; }
 .order-pool li {
-  border: 1px solid var(--rule);
+  border: 1px solid var(--color-rule);
   border-radius: 3px;
   padding: .5rem .8rem;
   margin-bottom: .4rem;
   cursor: pointer;
-  font-size: .93rem;
+  font-size: var(--fs-note);
   transition: opacity .15s, background .12s;
   user-select: none;
 }
@@ -319,99 +325,52 @@ tbody tr:last-child td { border-bottom: none; }
 .order-built li {
   counter-increment: built;
   padding: .42rem .8rem .42rem 2.3rem;
-  border-left: 2px solid var(--documented);
+  border-left: 2px solid var(--color-documented);
   margin-bottom: .3rem;
-  font-size: .93rem;
+  font-size: var(--fs-note);
   position: relative;
-  background: var(--documented-bg);
+  background: var(--color-documented-bg);
 }
 .order-built li::before {
   content: counter(built);
   position: absolute;
   left: .7rem;
-  font-family: var(--sans), sans-serif;
-  font-size: .72rem;
-  color: var(--muted);
+  font-family: var(--f-sans), sans-serif;
+  font-size: var(--fs-ui);
+  color: var(--color-muted);
 }
-.order-built .yr-reveal { font-family: var(--sans), sans-serif; font-size: .74rem; color: var(--documented); font-weight: 600; margin-left: .4rem; }
+.order-built .yr-reveal { font-family: var(--f-sans), sans-serif; font-size: var(--fs-ui); color: var(--color-documented); font-weight: 600; margin-left: .4rem; }
 
 .drill-reset {
-  font-family: var(--sans), sans-serif;
-  font-size: .72rem;
+  font-family: var(--f-sans), sans-serif;
+  font-size: var(--fs-ui);
   letter-spacing: .06em;
   text-transform: uppercase;
   background: none;
-  border: 1px solid var(--rule);
+  border: 1px solid var(--color-rule);
   border-radius: 3px;
   padding: .38rem .8rem;
-  color: var(--muted);
+  color: var(--color-muted);
   cursor: pointer;
 }
-.drill-reset:hover { border-color: var(--ink); color: var(--ink); }
-
-/* ── Flashcard drill (assets/flashcards.js) ───────────────── */
-
-.flash { margin: 1.8rem 0; }
-.flash-decks { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 1rem; }
-.flash-stage {
-  border: 1px solid var(--rule);
-  border-radius: 3px;
-  padding: 2rem 1.5rem;
-  min-height: 13rem;
-  text-align: center;
-}
-.flash-name {
-  font-size: 1.45rem;
-  margin: 0 0 .9rem;
-  letter-spacing: -0.01em;
-}
-.flash-hint {
-  font-family: var(--sans), sans-serif;
-  font-size: .8rem;
-  color: var(--muted);
-  margin: 0 0 1.3rem;
-}
-.flash-main { font-size: .8rem; padding: .55rem 1.4rem; }
-.flash-back { text-align: left; max-width: 34rem; margin: 0 auto 1.3rem; }
-.flash-line { font-size: .95rem; margin: 0 0 .6rem; }
-.flash-label {
-  display: block;
-  font-family: var(--sans), sans-serif;
-  font-size: .62rem;
-  letter-spacing: .13em;
-  text-transform: uppercase;
-  color: var(--muted);
-  font-weight: 600;
-  margin-bottom: .1rem;
-}
-.flash-actions { display: flex; justify-content: center; gap: .7rem; }
-.flash-knew { border-color: var(--documented); color: var(--documented); }
-.flash-knew:hover { border-color: var(--documented); color: var(--documented); background: var(--documented-bg); }
-.flash-missed { border-color: #b3543f; color: #b3543f; }
-.flash-missed:hover { border-color: #b3543f; color: #b3543f; background: rgba(179,84,63,.09); }
-.flash-progress {
-  font-family: var(--sans), sans-serif;
-  font-size: .76rem;
-  color: var(--muted);
-  margin-top: .7rem;
-}
+.drill-reset:hover { border-color: var(--color-ink); color: var(--color-ink); }
 
 /* ── Source recommendation ────────────────────────────────── */
 
 .source {
-  border: 1px solid var(--rule);
+  border: 1px solid var(--color-rule);
   border-radius: 3px;
   padding: 1.1rem 1.3rem;
   margin: 2rem 0;
-  font-size: .95rem;
+  font-size: var(--fs-note);
 }
 .source .tag {
   display: block;
-  font-family: var(--sans), sans-serif;
-  font-size: .64rem;
+  font-family: var(--f-sans), sans-serif;
+  font-size: var(--fs-tag);
   letter-spacing: .14em;
   text-transform: uppercase;
-  color: var(--muted);
+  color: var(--color-muted);
   margin-bottom: .5rem;
   font-weight: 600;
 }
@@ -424,7 +383,7 @@ tbody tr:last-child td { border-bottom: none; }
   padding: 1.1rem 1.3rem;
   background: var(--rule-soft);
   border-radius: 3px;
-  font-size: .93rem;
+  font-size: var(--fs-note);
 }
 .ask p:last-child { margin-bottom: 0; }
 .ask strong { font-weight: 600; }
@@ -434,37 +393,36 @@ tbody tr:last-child td { border-bottom: none; }
 .lesson-nav {
   margin-top: 3.5rem;
   padding-top: 1rem;
-  border-top: 1px solid var(--rule);
-  font-family: var(--sans), sans-serif;
-  font-size: .8rem;
+  border-top: 1px solid var(--color-rule);
+  font-family: var(--f-sans), sans-serif;
+  font-size: var(--fs-meta);
   display: flex;
   flex-wrap: wrap;
   gap: 1.4rem;
 }
 .lesson-nav a { border-bottom: none; }
-.lesson-nav a:hover { border-bottom: 1px solid var(--link); }
-.lesson-nav .nav-label { color: var(--muted); }
+.lesson-nav a:hover { border-bottom: 1px solid var(--color-link); }
+.lesson-nav .nav-label { color: var(--color-muted); }
 
 /* ── Reference-sheet density ──────────────────────────────── */
 
 /* Dense tables: full width, no margin column; sidenotes stack inline. */
-.refsheet { font-size: .95rem; }
+.refsheet { font-size: var(--fs-note); }
 .refsheet .page, .refsheet .page > * { max-width: 66rem; }
 .refsheet .side {
   float: none;
   width: auto;
   margin: 1.1rem 0;
   padding-left: .85rem;
-  border-left: 2px solid var(--rule);
+  border-left: 2px solid var(--color-rule);
 }
 .refsheet h2 { margin-top: 2.2rem; }
-.refsheet table { font-size: .95rem; }
+.refsheet table { font-size: var(--fs-note); }
 
-/* ── Narrow screens ─────────────────────────────────────────
-   Threshold = .page (71rem) + body padding (3rem); below it floated
-   sidenotes would overlap the text. */
+/* ── Narrow screens ───────────────────────────────────────── */
 
-@media (max-width: 74rem) {
+@media (max-width: 64rem) {
+  :root { --fs-h1: 1.75rem; }
   body { padding: 2.2rem 1.15rem 4rem; }
   /* Fixed-height plates would not shrink; hand sizing back to flex. */
   .card-row.plate { flex-wrap: wrap; }
@@ -480,23 +438,39 @@ tbody tr:last-child td { border-bottom: none; }
     width: auto;
     margin: 1.1rem 0;
     padding-left: .85rem;
-    border-left: 2px solid var(--rule);
+    border-left: 2px solid var(--color-rule);
   }
-  h1 { font-size: 1.75rem; }
+}
+
+/* ── Mobile type scale: every step ~1–2px down ────────────── */
+
+@media (max-width: 40rem) {
+  :root {
+    --fs-h1: 1.625rem;
+    --fs-h2: 1.3rem;
+    --fs-subtitle: 1.1rem;
+    --fs-h3: 1.05rem;
+    --fs-body: 1rem;
+    --fs-note: .9rem;
+    --fs-small: .85rem;
+    --fs-meta: .75rem;
+    --fs-ui: .72rem;
+    --fs-tag: .64rem;
+  }
 }
 
 /* ── Print ────────────────────────────────────────────────── */
 
 @media print {
   :root {
-    --paper: #fff;
-    --ink: #000;
-    --muted: #444;
-    --rule: #bbb;
+    --color-paper: #fff;
+    --color-ink: #000;
+    --color-muted: #444;
+    --color-rule: #bbb;
     --rule-soft: #e8e8e8;
-    --link: #000;
-    --documented: #16544a;
-    --documented-bg: #f3f7f5;
+    --color-link: #000;
+    --color-documented: #16544a;
+    --color-documented-bg: #f3f7f5;
     --invented: #7a4f10;
     --invented-bg: #faf5ea;
   }
@@ -507,7 +481,7 @@ tbody tr:last-child td { border-bottom: none; }
     width: auto;
     margin: .6rem 0;
     padding-left: .7rem;
-    border-left: 1.5pt solid var(--rule);
+    border-left: 1.5pt solid var(--color-rule);
   }
   h1 { font-size: 20pt; }
   h2 { font-size: 13pt; margin-top: 1.3rem; }
@@ -516,7 +490,7 @@ tbody tr:last-child td { border-bottom: none; }
   .lesson-nav a[href^="http"]::after, .side a[href^="http"]::after { content: ""; }
   figure, .callout, .source, table, .quiz-q, .handson > li { break-inside: avoid; page-break-inside: avoid; }
   h2, h3 { break-after: avoid; page-break-after: avoid; }
-  .drill-reset, .lesson-nav, .score, .flash { display: none; }
+  .drill-reset, .lesson-nav, .score { display: none; }
   .why { display: block; }          /* answers print, so the sheet is self-contained */
   .card-row img { box-shadow: none; }
   /* Same plate reset as the narrow breakpoint: fixed height would squash aspect. */
@@ -524,53 +498,4 @@ tbody tr:last-child td { border-bottom: none; }
   .card-row.plate > figure { flex: 1 1 8.5rem; max-width: 15rem; }
   .card-row.plate img,
   .card-row.plate svg { height: auto; width: 100%; }
-}
-
-/* ── Celtic Cross layout diagram ──────────────────────────── */
-.ccross {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(2.7rem, 3.9rem)) 1.1rem minmax(2.7rem, 3.9rem);
-  gap: .45rem;
-  justify-content: center;
-  margin: 1.7rem 0 .5rem;
-}
-.ccross .pos {
-  border: 1px solid var(--rule);
-  border-radius: 4px;
-  background: var(--rule-soft);
-  aspect-ratio: 5 / 8;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: .3rem .2rem;
-  font-family: var(--sans), sans-serif;
-  font-size: .6rem;
-  color: var(--muted);
-  line-height: 1.25;
-}
-.ccross .pos b {
-  display: block;
-  font-size: 1.05rem;
-  color: var(--ink);
-}
-.ccross .center { position: relative; justify-content: flex-start; padding-top: .35rem; }
-.ccross .cross2 {
-  position: absolute;
-  inset: 0;
-  margin: auto;
-  width: 80%;
-  aspect-ratio: 5 / 8;
-  transform: rotate(90deg);
-  border: 1px solid var(--muted);
-  border-radius: 4px;
-  background: var(--paper);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.05rem;
-  font-weight: 700;
-  color: var(--ink);
-  box-shadow: 0 1px 4px rgba(0,0,0,.18);
 }

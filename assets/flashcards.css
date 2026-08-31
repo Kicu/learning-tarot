@@ -1,0 +1,52 @@
+/* ── Flashcard drill (assets/flashcards.js) ───────────────── */
+/* Load after lesson.css — relies on its custom properties
+   (type-scale tokens, colors) and on .drill-reset for buttons. */
+
+.flash { margin: 1.8rem 0; }
+.flash-decks { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 1rem; }
+.flash-stage {
+  border: 1px solid var(--color-rule);
+  border-radius: 3px;
+  padding: 2rem 1.5rem;
+  min-height: 13rem;
+  text-align: center;
+}
+.flash-name {
+  font-size: var(--fs-h2);
+  margin: 0 0 .9rem;
+  letter-spacing: -0.01em;
+}
+.flash-hint {
+  font-family: var(--f-sans), sans-serif;
+  font-size: var(--fs-meta);
+  color: var(--color-muted);
+  margin: 0 0 1.3rem;
+}
+.flash-main { font-size: var(--fs-meta); padding: .55rem 1.4rem; }
+.flash-back { text-align: left; max-width: 34rem; margin: 0 auto 1.3rem; }
+.flash-line { font-size: var(--fs-note); margin: 0 0 .6rem; }
+.flash-label {
+  display: block;
+  font-family: var(--f-sans), sans-serif;
+  font-size: var(--fs-tag);
+  letter-spacing: .13em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+  font-weight: 600;
+  margin-bottom: .1rem;
+}
+.flash-actions { display: flex; justify-content: center; gap: .7rem; }
+.flash-knew { border-color: var(--color-documented); color: var(--color-documented); }
+.flash-knew:hover { border-color: var(--color-documented); color: var(--color-documented); background: var(--color-documented-bg); }
+.flash-missed { border-color: #b3543f; color: #b3543f; }
+.flash-missed:hover { border-color: #b3543f; color: #b3543f; background: rgba(179,84,63,.09); }
+.flash-progress {
+  font-family: var(--f-sans), sans-serif;
+  font-size: var(--fs-meta);
+  color: var(--color-muted);
+  margin-top: .7rem;
+}
+
+@media print {
+  .flash { display: none; }
+}
