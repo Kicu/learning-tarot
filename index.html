@@ -27,6 +27,21 @@
     font-family: var(--sans), sans-serif; font-size: .64rem; letter-spacing: .12em;
     text-transform: uppercase; color: var(--invented); font-weight: 600; margin-left: .5rem;
   }
+  /* Hero: undo the fixed height (it would stretch the cards).
+     Tree: scroll sideways rather than shrink below legibility. */
+  @media (max-width: 74rem) {
+    .hero .card-row.plate img { height: auto; }
+    .tree { overflow-x: auto; }
+    .tree svg { min-width: 44rem; }
+  }
+  /* flex-grow balloons the last wrapped card; pin fractions — five across, then three. */
+  @media (max-width: 50rem) {
+    .hero .card-row.plate > figure { flex: 0 1 auto; width: calc((100% - 5.6rem) / 5); min-width: 0; }
+  }
+  @media (max-width: 40rem) {
+    .hero .card-row.plate { gap: .8rem; justify-content: center; }
+    .hero .card-row.plate > figure { width: calc((100% - 1.6rem) / 3); }
+  }
 </style>
 </head>
 <body>
@@ -107,28 +122,28 @@
   </li>
   <li>
     <span class="no">09</span>
-    <span class="todo">The trumps, second sitting<span class="up-next">Up next</span>
-      <span class="what">XII–XXI and the Fool through the three-layer decoder.</span></span>
+    <span><a href="lessons/0009-last-ten-trumps-and-the-fool.html">The Last Ten Trumps, and the Fool</a>
+      <span class="what">XII–XXI as the end of the story — the Traitor, Death, Hell and God's fire, the three lights, the Last Things — plus the card that was never a trump, and the first drill on all twenty-two.</span></span>
   </li>
   <li>
     <span class="no">10</span>
-    <span class="todo">Reversals
-      <span class="what">And the honest case that they are optional.</span></span>
+    <span><a href="lessons/0010-the-three-card-spread.html">The Three-Card Spread</a>
+      <span class="what">Position as grammar — the frame declared before dealing, three memorized cards spoken into it, and the first full reading of the course.</span></span>
   </li>
   <li>
     <span class="no">11</span>
-    <span class="todo">Three-card spreads
-      <span class="what">Position as grammar; the first full reading.</span></span>
+    <span><a href="lessons/0011-the-celtic-cross.html">The Celtic Cross</a>
+      <span class="what">Waite's own ten-card spread — the Significator, the ten spoken formulas, the cross read as one scene — and the honest history of a method that is neither ancient nor, on any evidence, Celtic.</span></span>
   </li>
   <li>
     <span class="no">12</span>
-    <span class="todo">The Celtic Cross
-      <span class="what">Waite's own ten-position spread, from the Pictorial Key.</span></span>
+    <span class="todo">Reading aloud<span class="up-next">Up next</span>
+      <span class="what">Narrative construction, hedging honestly, and not pretending to predict.</span></span>
   </li>
   <li>
-    <span class="no">13</span>
-    <span class="todo">Reading aloud
-      <span class="what">Narrative construction, hedging honestly, and not pretending to predict.</span></span>
+    <span class="no">+</span>
+    <span class="todo">Reversals · parked as an extra
+      <span class="what">Documented since Etteilla's 1770 book, skipped by many strong readers — set aside for after the course; ask whenever you want it.</span></span>
   </li>
 </ol>
 
@@ -165,7 +180,7 @@
   <li>
     <span class="no">·</span>
     <span><a href="reference/trumps.html">The Twenty-Two Trumps</a>
-      <span class="what">The trump sequence card by card — 1450 identity, Book T overlay, Waite's printed meaning, and what to point at. First eleven rows filled; the rest arrive with the second sitting.</span></span>
+      <span class="what">The trump sequence card by card — 1450 identity, Book T overlay, Waite's printed meaning, and what to point at — plus the drill sheet with one spoken line per trump.</span></span>
   </li>
   <li>
     <span class="no">·</span>
@@ -177,9 +192,14 @@
     <span><a href="reference/suit-cards.html">The Fifty-Six Suit Cards</a>
       <span class="what">The master lookup: every suit card's 1888 title, Smith's scene in one sentence, and the meaning to say at the table — the sheet the lesson-8 drill grades against.</span></span>
   </li>
+  <li>
+    <span class="no">·</span>
+    <span><a href="reference/spreads.html">Reading with Spreads</a>
+      <span class="what">The live-reading sheet: the per-card procedure, the three-card frames, the honesty rules, and Waite's ten Celtic Cross positions.</span></span>
+  </li>
 </ol>
 
-<figure>
+<figure class="tree">
   <svg viewBox="0 0 840 240" role="img" aria-label="Tree diagram: 78 cards split into 22 trumps and 56 suit cards; the suit cards split into Wands, Cups, Swords and Pentacles, fourteen cards each.">
     <g style="font-family: var(--sans), sans-serif;" text-anchor="middle">
       <text x="420" y="30" style="fill: var(--ink); font-size: 17px; letter-spacing: .14em;">78 CARDS</text>
@@ -194,7 +214,7 @@
       <text x="570" y="172" style="fill: var(--ink); font-size: 13px;">Cups</text>
       <text x="685" y="172" style="fill: var(--ink); font-size: 13px;">Swords</text>
       <text x="800" y="172" style="fill: var(--muted); font-size: 13px;">Pentacles</text>
-      <text x="627" y="205" style="fill: var(--muted); font-size: 11.5px;">suit → kind of problem (3) · number → stage (4) · picture → plot (5) · court → posture (6) · all 56 by heart (8)</text>
+      <text x="535" y="205" style="fill: var(--muted); font-size: 11.5px;">suit → kind of problem (3) · number → stage (4) · picture → plot (5) · court → posture (6) · all 56 by heart (8)</text>
     </g>
   </svg>
   <figcaption>The territory, and which lesson covers which province of it.</figcaption>

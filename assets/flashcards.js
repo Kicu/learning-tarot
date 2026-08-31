@@ -15,6 +15,9 @@
  * and grades themselves. A missed card re-enters the queue a few cards
  * ahead, so it comes back within the same sitting. With more than one
  * deck an "All" deck is offered automatically.
+ *
+ * Optional top-level "labels": [picture, meaning, hook] renames the three
+ * lines on the card back (default: The scene / At the table / Title · posture).
  */
 (function () {
   'use strict';
@@ -36,6 +39,7 @@
 
   function initFlash(root) {
     var data = JSON.parse(root.querySelector('script[type="application/json"]').textContent);
+    var labels = data.labels || ['The scene', 'At the table', 'Title · posture'];
     var decks = data.decks.slice();
     if (decks.length > 1) {
       var all = [];
@@ -92,7 +96,7 @@
       stage.innerHTML = '';
       stage.appendChild(el('p', 'flash-name', card.name));
       var back = el('div', 'flash-back');
-      [['The scene', card.picture], ['At the table', card.meaning], ['Title · posture', card.hook]]
+      [[labels[0], card.picture], [labels[1], card.meaning], [labels[2], card.hook]]
         .forEach(function (pair) {
           var line = el('p', 'flash-line');
           line.appendChild(el('span', 'flash-label', pair[0]));

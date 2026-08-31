@@ -47,11 +47,8 @@ body {
 }
 
 /* ── Layout ─────────────────────────────────────────────────
-   .page is 71rem wide; content is capped at 51rem, leaving a
-   20rem margin column that sidenotes float into.
-   Keep the invariant: text + 4rem gutter + 16rem sidenote = .page.
-   If you change the text column, change .page by the same amount
-   and move the stacking breakpoint below to .page + 3rem.      */
+   Invariant: 51rem text + 4rem gutter + 16rem sidenote = 71rem .page;
+   the narrow breakpoint below = .page + 3rem. */
 
 .page { max-width: 71rem; margin: 0 auto; }
 .page > * { max-width: 51rem; }
@@ -124,10 +121,8 @@ strong { font-weight: 600; }
 .win p { margin: 0; font-size: 1.05rem; }
 
 /* ── Sidenotes ──────────────────────────────────────────────
-   Author these as DIRECT children of .page, never nested inside a <p>.
-   The float then resolves against .page's 71rem edge and lands in the
-   margin column beside the 51rem text block — no negative margin needed.
-   Place one just before the paragraph it annotates.                     */
+   Must be DIRECT children of .page (never inside a <p>), placed just
+   before the paragraph they annotate — the float lands in the margin. */
 
 .side {
   float: right;
@@ -168,8 +163,7 @@ strong { font-weight: 600; }
 /* ── Figures and card images ──────────────────────────────── */
 
 figure { margin: 2.2rem 0; }
-/* display:block on svg too — inline SVG otherwise sits on a text baseline
-   and the descender gap pushes its caption out of alignment with siblings. */
+/* block on svg too — inline SVG's baseline gap would misalign captions */
 figure img, figure svg { max-width: 100%; height: auto; display: block; }
 
 figcaption {
@@ -194,13 +188,9 @@ figcaption {
 }
 .card-row figcaption { margin-top: .55rem; }
 
-/* .plate normalises scans of differing aspect ratio to one height, so the
-   captions align — the museum-plate look. Height is tuned so three cards
-   fill the 51rem text column; keep card scale identical across a lesson so
-   the reader is comparing images, not sizes. */
-/* nowrap is load-bearing: with max-width removed, each figure's flex base
-   size is its caption's max-content width, which would wrap the cards onto
-   separate rows. A comparison must stay on one line. */
+/* .plate: one shared height so scans of differing aspect ratio align */
+/* nowrap required — each figure's flex basis is its caption's max-content
+   width, which would wrap the cards onto separate rows */
 .card-row.plate { flex-wrap: nowrap; }
 .card-row.plate > figure { flex: 0 1 auto; max-width: none; }
 .card-row.plate img,
@@ -455,10 +445,9 @@ tbody tr:last-child td { border-bottom: none; }
 .lesson-nav a:hover { border-bottom: 1px solid var(--link); }
 .lesson-nav .nav-label { color: var(--muted); }
 
-/* ── Reference-sheet density (reference/*.html) ───────────── */
+/* ── Reference-sheet density ──────────────────────────────── */
 
-/* Reference sheets are dense tables, not essays: full width, no margin
-   column, so any sidenote stacks inline rather than overlapping. */
+/* Dense tables: full width, no margin column; sidenotes stack inline. */
 .refsheet { font-size: .95rem; }
 .refsheet .page, .refsheet .page > * { max-width: 66rem; }
 .refsheet .side {
@@ -471,9 +460,9 @@ tbody tr:last-child td { border-bottom: none; }
 .refsheet h2 { margin-top: 2.2rem; }
 .refsheet table { font-size: .95rem; }
 
-/* ── Narrow screens: sidenotes become inline blocks ─────────
-   Threshold = .page (71rem) + body padding (3rem). Below this the page
-   would be squeezed while sidenotes still floated, overlapping the text. */
+/* ── Narrow screens ─────────────────────────────────────────
+   Threshold = .page (71rem) + body padding (3rem); below it floated
+   sidenotes would overlap the text. */
 
 @media (max-width: 74rem) {
   body { padding: 2.2rem 1.15rem 4rem; }
@@ -482,10 +471,8 @@ tbody tr:last-child td { border-bottom: none; }
   .card-row.plate > figure { flex: 1 1 8.5rem; max-width: 15rem; }
   .card-row.plate img,
   .card-row.plate svg { height: auto; width: 100%; }
-  /* Sidenotes stack from here down, so the margin column is dead weight:
-     collapse .page to the text measure instead of letting content reflow
-     to the full 71rem — which would read wider than the desktop layout.
-     .refsheet .page (0,2,0) still wins, keeping 66rem for dense tables. */
+  /* Margin column is dead here: collapse .page to the text measure.
+     .refsheet .page (higher specificity) still wins at 66rem. */
   .page { max-width: 51rem; }
   .page > *, .page > .wide, .refsheet .page > * { max-width: 100%; }
   .side {
@@ -532,10 +519,58 @@ tbody tr:last-child td { border-bottom: none; }
   .drill-reset, .lesson-nav, .score, .flash { display: none; }
   .why { display: block; }          /* answers print, so the sheet is self-contained */
   .card-row img { box-shadow: none; }
-  /* Same reset as the narrow breakpoint: a fixed plate height fighting
-     max-width:100% on a narrow page would squash the cards' aspect ratio. */
+  /* Same plate reset as the narrow breakpoint: fixed height would squash aspect. */
   .card-row.plate { flex-wrap: wrap; }
   .card-row.plate > figure { flex: 1 1 8.5rem; max-width: 15rem; }
   .card-row.plate img,
   .card-row.plate svg { height: auto; width: 100%; }
+}
+
+/* ── Celtic Cross layout diagram ──────────────────────────── */
+.ccross {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(2.7rem, 3.9rem)) 1.1rem minmax(2.7rem, 3.9rem);
+  gap: .45rem;
+  justify-content: center;
+  margin: 1.7rem 0 .5rem;
+}
+.ccross .pos {
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  background: var(--rule-soft);
+  aspect-ratio: 5 / 8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: .3rem .2rem;
+  font-family: var(--sans), sans-serif;
+  font-size: .6rem;
+  color: var(--muted);
+  line-height: 1.25;
+}
+.ccross .pos b {
+  display: block;
+  font-size: 1.05rem;
+  color: var(--ink);
+}
+.ccross .center { position: relative; justify-content: flex-start; padding-top: .35rem; }
+.ccross .cross2 {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 80%;
+  aspect-ratio: 5 / 8;
+  transform: rotate(90deg);
+  border: 1px solid var(--muted);
+  border-radius: 4px;
+  background: var(--paper);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--ink);
+  box-shadow: 0 1px 4px rgba(0,0,0,.18);
 }
