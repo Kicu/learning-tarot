@@ -1,0 +1,610 @@
+{
+  "deck": "Rider–Waite–Smith",
+  "artist": "Pamela Colman Smith",
+  "rights": "Public domain; see the linked Wikimedia Commons file pages.",
+  "note": "Existing local scans retained; 36 missing suit cards downloaded from the TaionWC Pam-A set on 2026-10-13. Thumbnails are resized local copies.",
+  "cards": [
+    {
+      "file": "rws-wands-01.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Wands01.jpg",
+      "name": "Ace of Wands",
+      "thumbnail": "thumbs/rws-wands-01.jpg",
+      "width": 500,
+      "height": 868
+    },
+    {
+      "file": "rws-wands-02.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Wands02.jpg",
+      "name": "Two of Wands",
+      "thumbnail": "thumbs/rws-wands-02.jpg",
+      "width": 1115,
+      "height": 1920
+    },
+    {
+      "file": "rws-wands-03.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Wands03.jpg",
+      "name": "Three of Wands",
+      "thumbnail": "thumbs/rws-wands-03.jpg",
+      "width": 1103,
+      "height": 1920
+    },
+    {
+      "file": "rws-wands-04.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Wands04.jpg",
+      "name": "Four of Wands",
+      "thumbnail": "thumbs/rws-wands-04.jpg",
+      "width": 1108,
+      "height": 1920
+    },
+    {
+      "file": "rws-wands-05.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Wands05.jpg",
+      "name": "Five of Wands",
+      "thumbnail": "thumbs/rws-wands-05.jpg",
+      "width": 1108,
+      "height": 1920
+    },
+    {
+      "file": "rws-wands-06.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Wands06.jpg",
+      "name": "Six of Wands",
+      "thumbnail": "thumbs/rws-wands-06.jpg",
+      "width": 1118,
+      "height": 1920
+    },
+    {
+      "file": "rws-wands-07.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Wands07.jpg",
+      "name": "Seven of Wands",
+      "thumbnail": "thumbs/rws-wands-07.jpg",
+      "width": 1109,
+      "height": 1920
+    },
+    {
+      "file": "rws-wands-08.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Wands08.jpg",
+      "name": "Eight of Wands",
+      "thumbnail": "thumbs/rws-wands-08.jpg",
+      "width": 1115,
+      "height": 1920
+    },
+    {
+      "file": "rws-wands-09.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Wands09.jpg",
+      "name": "Nine of Wands",
+      "thumbnail": "thumbs/rws-wands-09.jpg",
+      "width": 1114,
+      "height": 1919
+    },
+    {
+      "file": "rws-wands-10.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Wands10.jpg",
+      "name": "Ten of Wands",
+      "thumbnail": "thumbs/rws-wands-10.jpg",
+      "width": 1101,
+      "height": 1920
+    },
+    {
+      "file": "rws-wands-page.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Wands11.jpg",
+      "name": "Page of Wands",
+      "thumbnail": "thumbs/rws-wands-page.jpg",
+      "width": 1109,
+      "height": 1920
+    },
+    {
+      "file": "rws-wands-knight.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Wands12.jpg",
+      "name": "Knight of Wands",
+      "thumbnail": "thumbs/rws-wands-knight.jpg",
+      "width": 1115,
+      "height": 1920
+    },
+    {
+      "file": "rws-wands-queen.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Wands13.jpg",
+      "name": "Queen of Wands",
+      "thumbnail": "thumbs/rws-wands-queen.jpg",
+      "width": 1118,
+      "height": 1920
+    },
+    {
+      "file": "rws-wands-king.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Wands14.jpg",
+      "name": "King of Wands",
+      "thumbnail": "thumbs/rws-wands-king.jpg",
+      "width": 500,
+      "height": 870
+    },
+    {
+      "file": "rws-cups-01.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Cups01.jpg",
+      "name": "Ace of Cups",
+      "thumbnail": "thumbs/rws-cups-01.jpg",
+      "width": 500,
+      "height": 863
+    },
+    {
+      "file": "rws-cups-02.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Cups02.jpg",
+      "name": "Two of Cups",
+      "thumbnail": "thumbs/rws-cups-02.jpg",
+      "width": 1109,
+      "height": 1920
+    },
+    {
+      "file": "rws-cups-03.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Cups03.jpg",
+      "name": "Three of Cups",
+      "thumbnail": "thumbs/rws-cups-03.jpg",
+      "width": 1117,
+      "height": 1919
+    },
+    {
+      "file": "rws-cups-04.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Cups04.jpg",
+      "name": "Four of Cups",
+      "thumbnail": "thumbs/rws-cups-04.jpg",
+      "width": 1118,
+      "height": 1920
+    },
+    {
+      "file": "rws-cups-05.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Cups05.jpg",
+      "name": "Five of Cups",
+      "thumbnail": "thumbs/rws-cups-05.jpg",
+      "width": 1121,
+      "height": 1920
+    },
+    {
+      "file": "rws-cups-06.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Cups06.jpg",
+      "name": "Six of Cups",
+      "thumbnail": "thumbs/rws-cups-06.jpg",
+      "width": 1115,
+      "height": 1920
+    },
+    {
+      "file": "rws-cups-07.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Cups07.jpg",
+      "name": "Seven of Cups",
+      "thumbnail": "thumbs/rws-cups-07.jpg",
+      "width": 1109,
+      "height": 1920
+    },
+    {
+      "file": "rws-cups-08.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Cups08.jpg",
+      "name": "Eight of Cups",
+      "thumbnail": "thumbs/rws-cups-08.jpg",
+      "width": 1114,
+      "height": 1919
+    },
+    {
+      "file": "rws-cups-09.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Cups09.jpg",
+      "name": "Nine of Cups",
+      "thumbnail": "thumbs/rws-cups-09.jpg",
+      "width": 1114,
+      "height": 1919
+    },
+    {
+      "file": "rws-cups-10.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Cups10.jpg",
+      "name": "Ten of Cups",
+      "thumbnail": "thumbs/rws-cups-10.jpg",
+      "width": 1109,
+      "height": 1920
+    },
+    {
+      "file": "rws-cups-page.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Cups11.jpg",
+      "name": "Page of Cups",
+      "thumbnail": "thumbs/rws-cups-page.jpg",
+      "width": 500,
+      "height": 861
+    },
+    {
+      "file": "rws-cups-knight.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Cups12.jpg",
+      "name": "Knight of Cups",
+      "thumbnail": "thumbs/rws-cups-knight.jpg",
+      "width": 500,
+      "height": 866
+    },
+    {
+      "file": "rws-cups-queen.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Cups13.jpg",
+      "name": "Queen of Cups",
+      "thumbnail": "thumbs/rws-cups-queen.jpg",
+      "width": 500,
+      "height": 861
+    },
+    {
+      "file": "rws-cups-king.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Cups14.jpg",
+      "name": "King of Cups",
+      "thumbnail": "thumbs/rws-cups-king.jpg",
+      "width": 500,
+      "height": 856
+    },
+    {
+      "file": "rws-swords-01.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Swords01.jpg",
+      "name": "Ace of Swords",
+      "thumbnail": "thumbs/rws-swords-01.jpg",
+      "width": 500,
+      "height": 866
+    },
+    {
+      "file": "rws-swords-02.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Swords02.jpg",
+      "name": "Two of Swords",
+      "thumbnail": "thumbs/rws-swords-02.jpg",
+      "width": 1121,
+      "height": 1920
+    },
+    {
+      "file": "rws-swords-03.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Swords03.jpg",
+      "name": "Three of Swords",
+      "thumbnail": "thumbs/rws-swords-03.jpg",
+      "width": 367,
+      "height": 640
+    },
+    {
+      "file": "rws-swords-04.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Swords04.jpg",
+      "name": "Four of Swords",
+      "thumbnail": "thumbs/rws-swords-04.jpg",
+      "width": 1117,
+      "height": 1919
+    },
+    {
+      "file": "rws-swords-05.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Swords05.jpg",
+      "name": "Five of Swords",
+      "thumbnail": "thumbs/rws-swords-05.jpg",
+      "width": 1109,
+      "height": 1920
+    },
+    {
+      "file": "rws-swords-06.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Swords06.jpg",
+      "name": "Six of Swords",
+      "thumbnail": "thumbs/rws-swords-06.jpg",
+      "width": 1111,
+      "height": 1919
+    },
+    {
+      "file": "rws-swords-07.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Swords07.jpg",
+      "name": "Seven of Swords",
+      "thumbnail": "thumbs/rws-swords-07.jpg",
+      "width": 1114,
+      "height": 1919
+    },
+    {
+      "file": "rws-swords-08.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Swords08.jpg",
+      "name": "Eight of Swords",
+      "thumbnail": "thumbs/rws-swords-08.jpg",
+      "width": 1114,
+      "height": 1919
+    },
+    {
+      "file": "rws-swords-09.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Swords09.jpg",
+      "name": "Nine of Swords",
+      "thumbnail": "thumbs/rws-swords-09.jpg",
+      "width": 1114,
+      "height": 1919
+    },
+    {
+      "file": "rws-swords-10.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Swords10.jpg",
+      "name": "Ten of Swords",
+      "thumbnail": "thumbs/rws-swords-10.jpg",
+      "width": 1107,
+      "height": 1920
+    },
+    {
+      "file": "rws-swords-page.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Swords11.jpg",
+      "name": "Page of Swords",
+      "thumbnail": "thumbs/rws-swords-page.jpg",
+      "width": 1108,
+      "height": 1920
+    },
+    {
+      "file": "rws-swords-knight.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Swords12.jpg",
+      "name": "Knight of Swords",
+      "thumbnail": "thumbs/rws-swords-knight.jpg",
+      "width": 1112,
+      "height": 1920
+    },
+    {
+      "file": "rws-swords-queen.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Swords13.jpg",
+      "name": "Queen of Swords",
+      "thumbnail": "thumbs/rws-swords-queen.jpg",
+      "width": 1104,
+      "height": 1920
+    },
+    {
+      "file": "rws-swords-king.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Swords14.jpg",
+      "name": "King of Swords",
+      "thumbnail": "thumbs/rws-swords-king.jpg",
+      "width": 1117,
+      "height": 1919
+    },
+    {
+      "file": "rws-pentacles-01.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Pents01.jpg",
+      "name": "Ace of Pentacles",
+      "thumbnail": "thumbs/rws-pentacles-01.jpg",
+      "width": 500,
+      "height": 866
+    },
+    {
+      "file": "rws-pentacles-02.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Pents02.jpg",
+      "name": "Two of Pentacles",
+      "thumbnail": "thumbs/rws-pentacles-02.jpg",
+      "width": 1112,
+      "height": 1920
+    },
+    {
+      "file": "rws-pentacles-03.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Pents03.jpg",
+      "name": "Three of Pentacles",
+      "thumbnail": "thumbs/rws-pentacles-03.jpg",
+      "width": 1117,
+      "height": 1919
+    },
+    {
+      "file": "rws-pentacles-04.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Pents04.jpg",
+      "name": "Four of Pentacles",
+      "thumbnail": "thumbs/rws-pentacles-04.jpg",
+      "width": 1110,
+      "height": 1920
+    },
+    {
+      "file": "rws-pentacles-05.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Pents05.jpg",
+      "name": "Five of Pentacles",
+      "thumbnail": "thumbs/rws-pentacles-05.jpg",
+      "width": 1112,
+      "height": 1920
+    },
+    {
+      "file": "rws-pentacles-06.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Pents06.jpg",
+      "name": "Six of Pentacles",
+      "thumbnail": "thumbs/rws-pentacles-06.jpg",
+      "width": 1109,
+      "height": 1920
+    },
+    {
+      "file": "rws-pentacles-07.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Pents07.jpg",
+      "name": "Seven of Pentacles",
+      "thumbnail": "thumbs/rws-pentacles-07.jpg",
+      "width": 1114,
+      "height": 1919
+    },
+    {
+      "file": "rws-pentacles-08.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Pents08.jpg",
+      "name": "Eight of Pentacles",
+      "thumbnail": "thumbs/rws-pentacles-08.jpg",
+      "width": 1117,
+      "height": 1920
+    },
+    {
+      "file": "rws-pentacles-09.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Pents09.jpg",
+      "name": "Nine of Pentacles",
+      "thumbnail": "thumbs/rws-pentacles-09.jpg",
+      "width": 1108,
+      "height": 1920
+    },
+    {
+      "file": "rws-pentacles-10.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Pents10.jpg",
+      "name": "Ten of Pentacles",
+      "thumbnail": "thumbs/rws-pentacles-10.jpg",
+      "width": 1115,
+      "height": 1920
+    },
+    {
+      "file": "rws-pentacles-page.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Pents11.jpg",
+      "name": "Page of Pentacles",
+      "thumbnail": "thumbs/rws-pentacles-page.jpg",
+      "width": 500,
+      "height": 863
+    },
+    {
+      "file": "rws-pentacles-knight.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Pents12.jpg",
+      "name": "Knight of Pentacles",
+      "thumbnail": "thumbs/rws-pentacles-knight.jpg",
+      "width": 1111,
+      "height": 1919
+    },
+    {
+      "file": "rws-pentacles-queen.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Pents13.jpg",
+      "name": "Queen of Pentacles",
+      "thumbnail": "thumbs/rws-pentacles-queen.jpg",
+      "width": 500,
+      "height": 866
+    },
+    {
+      "file": "rws-pentacles-king.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Pents14.jpg",
+      "name": "King of Pentacles",
+      "thumbnail": "thumbs/rws-pentacles-king.jpg",
+      "width": 500,
+      "height": 867
+    },
+    {
+      "name": "Fool",
+      "file": "rws-00-fool.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:RWS%20Tarot%2000%20Fool.jpg",
+      "width": 500,
+      "height": 839
+    },
+    {
+      "name": "Magician",
+      "file": "rws-magician.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:RWS%20Tarot%2001%20Magician.jpg",
+      "width": 369,
+      "height": 640
+    },
+    {
+      "name": "High Priestess",
+      "file": "rws-02-high-priestess.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:RWS%20Tarot%2002%20High%20Priestess.jpg",
+      "width": 500,
+      "height": 859
+    },
+    {
+      "name": "Empress",
+      "file": "rws-03-empress.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:RWS%20Tarot%2003%20Empress.jpg",
+      "width": 500,
+      "height": 855
+    },
+    {
+      "name": "Emperor",
+      "file": "rws-04-emperor.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:RWS%20Tarot%2004%20Emperor.jpg",
+      "width": 500,
+      "height": 859
+    },
+    {
+      "name": "Hierophant",
+      "file": "rws-05-hierophant.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:RWS%20Tarot%2005%20Hierophant.jpg",
+      "width": 500,
+      "height": 861
+    },
+    {
+      "name": "Lovers",
+      "file": "rws-06-lovers.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:RWS%20Tarot%2006%20Lovers.jpg",
+      "width": 500,
+      "height": 856
+    },
+    {
+      "name": "Chariot",
+      "file": "rws-07-chariot.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:RWS%20Tarot%2007%20Chariot.jpg",
+      "width": 500,
+      "height": 863
+    },
+    {
+      "name": "Strength",
+      "file": "rws-08-strength.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:RWS%20Tarot%2008%20Strength.jpg",
+      "width": 500,
+      "height": 861
+    },
+    {
+      "name": "Hermit",
+      "file": "rws-09-hermit.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:RWS%20Tarot%2009%20Hermit.jpg",
+      "width": 500,
+      "height": 855
+    },
+    {
+      "name": "Wheel of Fortune",
+      "file": "rws-10-wheel.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:RWS%20Tarot%2010%20Wheel%20of%20Fortune.jpg",
+      "width": 500,
+      "height": 869
+    },
+    {
+      "name": "Justice",
+      "file": "rws-11-justice.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:RWS%20Tarot%2011%20Justice.jpg",
+      "width": 500,
+      "height": 861
+    },
+    {
+      "name": "Hanged Man",
+      "file": "rws-12-hanged-man.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:RWS%20Tarot%2012%20Hanged%20Man.jpg",
+      "width": 500,
+      "height": 879
+    },
+    {
+      "name": "Death",
+      "file": "rws-13-death.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:RWS%20Tarot%2013%20Death.jpg",
+      "width": 500,
+      "height": 864
+    },
+    {
+      "name": "Temperance",
+      "file": "rws-14-temperance.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:RWS%20Tarot%2014%20Temperance.jpg",
+      "width": 500,
+      "height": 868
+    },
+    {
+      "name": "Devil",
+      "file": "rws-15-devil.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:RWS%20Tarot%2015%20Devil.jpg",
+      "width": 500,
+      "height": 881
+    },
+    {
+      "name": "Tower",
+      "file": "rws-16-tower.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:RWS%20Tarot%2016%20Tower.jpg",
+      "width": 500,
+      "height": 866
+    },
+    {
+      "name": "Star",
+      "file": "rws-17-star.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:RWS%20Tarot%2017%20Star.jpg",
+      "width": 500,
+      "height": 861
+    },
+    {
+      "name": "Moon",
+      "file": "rws-18-moon.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:RWS%20Tarot%2018%20Moon.jpg",
+      "width": 500,
+      "height": 864
+    },
+    {
+      "name": "Sun",
+      "file": "rws-19-sun.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:RWS%20Tarot%2019%20Sun.jpg",
+      "width": 500,
+      "height": 861
+    },
+    {
+      "name": "Judgement",
+      "file": "rws-20-judgement.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:RWS%20Tarot%2020%20Judgement.jpg",
+      "width": 500,
+      "height": 861
+    },
+    {
+      "name": "World",
+      "file": "rws-21-world.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:RWS%20Tarot%2021%20World.jpg",
+      "width": 500,
+      "height": 863
+    }
+  ]
+}

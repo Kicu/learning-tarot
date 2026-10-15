@@ -10,6 +10,7 @@ If changing existing text the changes should not be very big. These rules should
  - Decrease the amount of parallels and analogues when addressing me/the user/the reader.
  - The overall style should be friendly prose, as in a book pop-sci book teaching people about subject, casual but correct and to the point.
  - Minimize the usage of the words: payoff, load-bearing.
+ - Avoid sentences that combine shifting pronouns, abstract wording, and unexplained symbolism. Name the person or card when the subject changes, explain abstractions in everyday language, and state what a symbolic example means instead of making the reader infer the connection.
  - Avoid writing sentences in a reverse-style: where first a lot of words describe some phenomena, so that in the latter part of sentence (or paragraph) said phenomena is surprisingly uncovered; instead write in a more standard structure, as if describing something step by step. 
 
 ## Examples of actual sentences

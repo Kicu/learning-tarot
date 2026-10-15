@@ -22,24 +22,24 @@
   'use strict';
 
   function shuffle(nodes) {
-    var arr = nodes.slice();
-    for (var i = arr.length - 1; i > 0; i--) {
-      var j = Math.floor(Math.random() * (i + 1));
-      var t = arr[i]; arr[i] = arr[j]; arr[j] = t;
+    const arr = nodes.slice();
+    for (let i = arr.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      const t = arr[i]; arr[i] = arr[j]; arr[j] = t;
     }
-    var parent = arr[0].parentNode;
+    const parent = arr[0].parentNode;
     arr.forEach(function (n) { parent.appendChild(n); });
   }
 
   function initOrder(root) {
-    var pool = root.querySelector('.order-pool');
-    var built = root.querySelector('.order-built');
-    var scoreEl = root.querySelector('[data-score]');
-    var resetBtn = root.querySelector('.drill-reset');
-    var items = Array.prototype.slice.call(pool.querySelectorAll('li'));
-    var total = items.length;
-    var next = 1;
-    var mistakes = 0;
+    const pool = root.querySelector('.order-pool');
+    const built = root.querySelector('.order-built');
+    const scoreEl = root.querySelector('[data-score]');
+    const resetBtn = root.querySelector('.drill-reset');
+    const items = Array.from(pool.querySelectorAll('li'));
+    const total = items.length;
+    let next = 1;
+    let mistakes = 0;
 
     function updateScore() {
       if (!scoreEl) return;
@@ -78,10 +78,10 @@
         }
 
         li.classList.add('taken');
-        var placed = document.createElement('li');
+        const placed = document.createElement('li');
         placed.textContent = li.textContent;
         if (li.dataset.reveal) {
-          var yr = document.createElement('span');
+          const yr = document.createElement('span');
           yr.className = 'yr-reveal';
           yr.textContent = li.dataset.reveal;
           placed.appendChild(yr);

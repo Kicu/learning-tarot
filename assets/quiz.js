@@ -21,20 +21,20 @@
   'use strict';
 
   function shuffle(nodes) {
-    var arr = nodes.slice();
-    for (var i = arr.length - 1; i > 0; i--) {
-      var j = Math.floor(Math.random() * (i + 1));
-      var t = arr[i]; arr[i] = arr[j]; arr[j] = t;
+    const arr = nodes.slice();
+    for (let i = arr.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      const t = arr[i]; arr[i] = arr[j]; arr[j] = t;
     }
-    var parent = arr[0].parentNode;
+    const parent = arr[0].parentNode;
     arr.forEach(function (n) { parent.appendChild(n); });
   }
 
   function initQuiz(quiz) {
-    var questions = Array.prototype.slice.call(quiz.querySelectorAll('.quiz-q'));
-    var scoreEl = quiz.querySelector('[data-score]');
-    var answered = 0;
-    var correct = 0;
+    const questions = Array.from(quiz.querySelectorAll('.quiz-q'));
+    const scoreEl = quiz.querySelector('[data-score]');
+    let answered = 0;
+    let correct = 0;
 
     function updateScore() {
       if (!scoreEl) return;
@@ -42,7 +42,7 @@
         scoreEl.textContent = questions.length + ' questions · one attempt each';
         return;
       }
-      var txt = correct + ' of ' + answered + ' correct';
+      let txt = correct + ' of ' + answered + ' correct';
       if (answered === questions.length) {
         txt += correct === questions.length
           ? ' — all of them. Ready for the next lesson.'
@@ -52,7 +52,7 @@
     }
 
     questions.forEach(function (q) {
-      var opts = Array.prototype.slice.call(q.querySelectorAll('.quiz-opts li'));
+      const opts = Array.from(q.querySelectorAll('.quiz-opts li'));
       shuffle(opts);
 
       opts.forEach(function (opt) {
@@ -62,7 +62,7 @@
         function choose() {
           if (q.classList.contains('done')) return;
           q.classList.add('done');
-          var right = opt.dataset.opt === q.dataset.answer;
+          const right = opt.dataset.opt === q.dataset.answer;
           opt.classList.add(right ? 'picked-right' : 'picked-wrong');
           if (!right) {
             opts.forEach(function (o) {

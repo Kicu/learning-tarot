@@ -22,9 +22,14 @@ Curated, high-trust only. Tarot has an unusually bad signal-to-noise ratio: most
 - [Eden Gray, _A Complete Guide to the Tarot_ (1970) — Internet Archive](https://archive.org/details/completeguidetot00gray)
   The book that taught the post-1969 boom to read RWS scenes literally. Use for: the hinge between Waite's word-lists and today's meanings — her Seven of Swords entry is where "make away with what is not yours" enters the tradition. On the Celtic Cross she is a dated waypoint: [Benebell Wen's review of _Mastering the Tarot_ (1971)](https://benebellwen.com/2012/12/15/eden-grays-mastering-the-tarot-celtickeltic-cross-three-aces-spreads/) shows her still printing it as the "Keltic Cross" with the cards in a different order from Waite's, and [Mary Greer's position-9 post (2018)](https://marykgreer.com/2018/11/02/position-9-in-the-celtic-cross-spread/) notes Gray split fears into a position of its own (both verified 2026-08-31, lesson 11); [Wikipedia](https://en.wikipedia.org/wiki/Eden_Gray) has the sourced book list and her "integral part" in the revival.
 - [Biddy Tarot](https://www.biddytarot.com/tarot-card-meanings/) · [Labyrinthos](https://labyrinthos.co/blogs/tarot-card-meanings-list)
-  Not scholarship — the barometer of what a card means to today's mainstream. Use for: checking where a century of scene-reading has landed, before explaining how it got there.
+  Not scholarship — the barometer of what a card means to today's mainstream. Use for: checking where a century of scene-reading has landed, before explaining how it got there. Checked again on 2026-10-13 for the 56 upright “simple meaning” entries in `reference/suit-cards.html`, using Biddy’s four suit guides and Labyrinthos for comparison. These are modern interpretive prompts, distinct from Book T’s historical titles.
 
 ## Knowledge — History and scholarship
+
+- [Michael J. Hurst — Michael Dummett and Tarot Iconography](https://pre-gebelin.blogspot.com/2011/12/michael-dummett-and-tarot-iconography.html)
+  Verified 2026-10-13. Reproduces Dummett on regional orders and broad subject groups. Distinguish quoted scholarship from Hurst's additional hypotheses; use for the limits of a single sequence explanation.
+- [Tarot Heritage — The Chariot](https://tarot-heritage.com/from-trionfi-to-majorarcana/il-carro-le-chariot-the-chariot/)
+  Verified 2026-10-13. Compares early images and competing Chastity, Fame and dynastic readings; use for the uncertain Lovers–Chariot connection. Waite's own account is available in [The Pictorial Key, Part II](https://en.wikisource.org/wiki/The_Pictorial_Key_to_the_Tarot/Part_2), also verified this session.
 
 - [Michael Dummett, _The Game of Tarot: From Ferrara to Salt Lake City_ (1980)](https://www.weiserantiquarian.com/pages/books/72742/michael-dummett-with-the-assistance-of-sylvia-mann/the-game-of-tarot-from-ferrara-to-salt-lake-city)
   The foundational scholarly work; established the 15th-century Italian origin and demonstrated that no divinatory use is recorded before the 18th century. Out of print and expensive — read *about* it before buying. Use for: settling any historical dispute.
@@ -79,7 +84,7 @@ Curated, high-trust only. Tarot has an unusually bad signal-to-noise ratio: most
 ## Knowledge — Card images
 
 - [Wikimedia Commons — Works by Pamela Colman Smith](https://commons.wikimedia.org/wiki/Category:Works_by_Pamela_Colman_Smith)
-  Public domain in the US and UK for the original 1909 deck (note: some modern recolourings are still under copyright). Files follow `RWS Tarot NN Name.jpg` for trumps and `Swords03.jpg` / `Cups07.jpg` for suit cards. Local copies live in `./assets/img/`.
+  Public domain in the US and UK for the original 1909 deck (note: some modern recolourings are still under copyright). Files follow `RWS Tarot NN Name.jpg` for trumps and `Swords03.jpg` / `Cups07.jpg` for suit cards. Local copies live in `./assets/img/`. The complete 78-card local deck is indexed in `assets/img/rws-sources.json` (completed 2026-10-13); the suit reference uses small derivatives in `assets/img/thumbs/`, with larger scans available on click.
 - [Wikimedia Commons — Pierpont Morgan-Bergamo Visconti-Sforza Tarot](https://commons.wikimedia.org/wiki/Category:Pierpont_Morgan-Bergamo_Visconti-Sforza_Tarot) · [Sacred-texts RWS copyright FAQ](https://sacred-texts.com/tarot/faq.htm)
   The c. 1450 hand-painted deck, and the licensing situation for RWS scans.
 

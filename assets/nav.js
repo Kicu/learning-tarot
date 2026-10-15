@@ -15,7 +15,7 @@
 (function () {
   'use strict';
 
-  var LESSONS = [
+  const LESSONS = [
     { file: '0001-where-tarot-comes-from.html', title: '01 · Where Tarot Comes From' },
     { file: '0002-deck-anatomy.html', title: '02 · The Anatomy of the Deck' },
     { file: '0003-four-suits-four-problems.html', title: '03 · The Four Suits as Four Kinds of Problem' },
@@ -27,31 +27,32 @@
     { file: '0009-last-ten-trumps-and-the-fool.html', title: '09 · The Last Ten Trumps, and the Fool' },
     { file: '0010-the-three-card-spread.html', title: '10 · The Three-Card Spread' },
     { file: '0011-the-celtic-cross.html', title: '11 · The Celtic Cross' },
-    { file: null, title: '12 · Reading Aloud — not yet written, just ask' }
+    { file: '0012-why-lovers-before-chariot.html', title: '12 · Why Lovers Before Chariot?' },
+    { file: null, title: '13 · Reading Aloud — not yet written, just ask' }
   ];
 
-  var nav = document.querySelector('.lesson-nav');
+  const nav = document.querySelector('.lesson-nav');
   if (!nav) return;
 
-  var here = decodeURIComponent(location.pathname.split('/').pop());
-  var i;
+  const here = decodeURIComponent(location.pathname.split('/').pop());
+  let i;
   for (i = 0; i < LESSONS.length; i++) {
     if (LESSONS[i].file === here) break;
   }
   if (i === LESSONS.length) return;
 
-  var refs = Array.prototype.slice.call(nav.querySelectorAll('a'));
+  const refs = Array.from(nav.querySelectorAll('a'));
   nav.textContent = '';
 
   function label(text) {
-    var s = document.createElement('span');
+    const s = document.createElement('span');
     s.className = 'nav-label';
     s.textContent = text;
     nav.appendChild(s);
   }
 
   function link(href, text) {
-    var a = document.createElement('a');
+    const a = document.createElement('a');
     a.href = href;
     a.textContent = text;
     nav.appendChild(a);
@@ -70,12 +71,12 @@
   }
 
   if (i + 1 < LESSONS.length) {
-    var next = LESSONS[i + 1];
+    const next = LESSONS[i + 1];
     label('Next');
     if (next.file) {
       link(next.file, next.title + ' →');
     } else {
-      var s = document.createElement('span');
+      const s = document.createElement('span');
       s.textContent = next.title;
       nav.appendChild(s);
     }

@@ -23,41 +23,41 @@
   'use strict';
 
   function shuffle(arr) {
-    for (var i = arr.length - 1; i > 0; i--) {
-      var j = Math.floor(Math.random() * (i + 1));
-      var t = arr[i]; arr[i] = arr[j]; arr[j] = t;
+    for (let i = arr.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      const t = arr[i]; arr[i] = arr[j]; arr[j] = t;
     }
     return arr;
   }
 
   function el(tag, className, text) {
-    var n = document.createElement(tag);
+    const n = document.createElement(tag);
     if (className) n.className = className;
     if (text) n.textContent = text;
     return n;
   }
 
   function initFlash(root) {
-    var data = JSON.parse(root.querySelector('script[type="application/json"]').textContent);
-    var labels = data.labels || ['The scene', 'At the table', 'Title · posture'];
-    var decks = data.decks.slice();
+    const data = JSON.parse(root.querySelector('script[type="application/json"]').textContent);
+    const labels = data.labels || ['The scene', 'At the table', 'Title · posture'];
+    const decks = data.decks.slice();
     if (decks.length > 1) {
-      var all = [];
+      let all = [];
       decks.forEach(function (d) { all = all.concat(d.cards); });
       decks.push({ label: 'All ' + all.length, cards: all });
     }
 
-    var picker = el('div', 'flash-decks');
-    var stage = el('div', 'flash-stage');
-    var progress = el('p', 'flash-progress');
+    const picker = el('div', 'flash-decks');
+    const stage = el('div', 'flash-stage');
+    const progress = el('p', 'flash-progress');
     root.appendChild(picker);
     root.appendChild(stage);
     root.appendChild(progress);
 
-    var queue = [], total = 0, firstTry = 0, retried = 0;
+    let queue = [], total = 0, firstTry = 0, retried = 0;
 
     decks.forEach(function (deck) {
-      var b = el('button', 'drill-reset', deck.label);
+      const b = el('button', 'drill-reset', deck.label);
       b.addEventListener('click', function () { start(deck); });
       picker.appendChild(b);
     });
@@ -73,18 +73,18 @@
     }
 
     function updateProgress() {
-      var done = firstTry + retried;
+      const done = firstTry + retried;
       progress.textContent = done + ' of ' + total + ' cleared · ' + queue.length + ' in the queue';
     }
 
     function showFront() {
       if (!queue.length) { showDone(); return; }
-      var card = queue[0];
+      const card = queue[0];
       stage.innerHTML = '';
       stage.appendChild(el('p', 'flash-name', card.name));
-      var hint = el('p', 'flash-hint', 'Say the scene and the meaning aloud, then check.');
+      const hint = el('p', 'flash-hint', 'Say the scene and the meaning aloud, then check.');
       stage.appendChild(hint);
-      var reveal = el('button', 'drill-reset flash-main', 'Reveal');
+      const reveal = el('button', 'drill-reset flash-main', 'Reveal');
       reveal.addEventListener('click', showBack);
       stage.appendChild(reveal);
       reveal.focus();
@@ -92,22 +92,22 @@
     }
 
     function showBack() {
-      var card = queue[0];
+      const card = queue[0];
       stage.innerHTML = '';
       stage.appendChild(el('p', 'flash-name', card.name));
-      var back = el('div', 'flash-back');
+      const back = el('div', 'flash-back');
       [[labels[0], card.picture], [labels[1], card.meaning], [labels[2], card.hook]]
         .forEach(function (pair) {
-          var line = el('p', 'flash-line');
+          const line = el('p', 'flash-line');
           line.appendChild(el('span', 'flash-label', pair[0]));
           line.appendChild(document.createTextNode(pair[1]));
           back.appendChild(line);
         });
       stage.appendChild(back);
 
-      var actions = el('div', 'flash-actions');
-      var knew = el('button', 'drill-reset flash-knew', 'Knew it');
-      var missed = el('button', 'drill-reset flash-missed', 'Missed it');
+      const actions = el('div', 'flash-actions');
+      const knew = el('button', 'drill-reset flash-knew', 'Knew it');
+      const missed = el('button', 'drill-reset flash-missed', 'Missed it');
       knew.addEventListener('click', function () {
         queue.shift();
         if (card.missed) retried++; else firstTry++;
@@ -129,7 +129,7 @@
     function showDone() {
       stage.innerHTML = '';
       stage.appendChild(el('p', 'flash-name', 'Done.'));
-      var summary = total + ' cards · ' + firstTry + ' known on first sight · ' + retried + ' needed retries.';
+      const summary = total + ' cards · ' + firstTry + ' known on first sight · ' + retried + ' needed retries.';
       stage.appendChild(el('p', 'flash-hint', summary +
         (retried === 0 ? ' Come back in two days, not in two minutes.' : ' Run the same deck once more, then leave it until the next sitting.')));
       progress.textContent = 'Pick a deck above to go again.';
