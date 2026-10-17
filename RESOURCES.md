@@ -101,7 +101,7 @@ _Not yet raised with Mateusz. Plan: suggest r/tarot around lesson 3–4, once he
 
 ## Knowledge — Practitioner teaching (vetted 2026-08-13)
 
-- Rachel Pollack, _Seventy-Eight Degrees of Wisdom_ (1980/1997) — no stable free text to link; cite the book.
+- [Rachel Pollack, _Seventy-Eight Degrees of Wisdom_ — publisher's page](https://redwheelweiser.com/book/seventy-eight-degrees-of-wisdom-9781578636655/) (first published in two volumes, 1980 and 1983; later editions include 1997).
   Vetted: the flagship of image-first RWS reading, and honest about the system's seams ("the picture almost contradicts the meaning" on the Two of Swords; "Pamela Smith has given us something to interpret"). Use for: how a serious reader actually works with Smith's scenes. Interpretive, not historical — label accordingly.
 - [Joan Bunning, Learn Tarot — free 19-lesson course (via Wayback Machine)](https://web.archive.org/web/20231208182605/http://www.learntarot.com/s7.htm)
   The live site currently refuses connections; Wayback copies work. Image-first with a light suit × rank scaffold. Use for: a second opinion on any number card, free and sane.
@@ -134,6 +134,28 @@ Research behind `reference/decks-beyond-rws.html`; per-deck product and review l
 - [Hyperallergic (2019) — "more than 100 million copies … in circulation in over 20 countries"](https://hyperallergic.com/pamela-colman-smith-pratt-institute-libraries/)
   The citable form of the RWS popularity claim — a publisher-traced circulation estimate, not an audited figure; Wikipedia's own citation points here. Use for: the headline number, labelled honestly.
 - Fetch notes: usgamesinc.com 403-blocks automated fetches (verify its product pages via Wayback snapshots); liminal11.com was unreachable throughout — Modern Witch's "400,000 copies" figure stays unverified, do not cite it.
+
+## Knowledge — Bookshelf reference (verified 2026-10-17)
+
+- [Eden Gray, _The Complete Guide to the Tarot_ — official publisher access](https://www.penguinrandomhouse.com/books/70814/the-complete-guide-to-the-tarot-by-eden-gray/)
+  Publisher offers print and ebook purchase options. Use for obtaining the book; do not label the page as free full text or assume the Archive record permits borrowing.
+- [Michael Dummett, _The Game of Tarot_ — Part I scan](https://archive.org/details/game_of_tarot_part_1)
+  Verified the archive metadata and OCR: this item contains Part I, “History and Mystery,” rather than the complete book. The bookshelf leaves a full-book-link placeholder. For the complete volume, search library catalogues or interlibrary loan using ISBN 0715610147 / OCLC 7275570; the [Open Library edition record](https://openlibrary.org/books/OL21675422M/The_game_of_tarot) identifies Duckworth, 1980.
+
+- [Mary K. Greer, “The Golden Dawn Minor Arcana” (2008)](https://marykgreer.com/2008/03/04/the-golden-dawn-minor-arcana/)
+  Transcription of the hand-copied Sub Spe / John Brodie-Innes manuscript used in lessons 3–4. Distinguish its number glosses from Book T's card titles and from the course's modern narrative framing. Greer's post does not establish the manuscript's exact original date.
+- [Etteilla, _Manière de se récréer avec le jeu de cartes nommées tarots_ — edition record and scan](https://openlibrary.org/books/OL1795366M/Maniere_de_se_re%CC%81cre%CC%81er_avec_le_jeu_de_cartes_nomme%CC%81es_tarots)
+  Bibliographic record for the 1783–85 parts; distinguish this tarot work from the 1770 ordinary-card manual. Later Etteilla-school lists need their own attribution rather than being treated as direct quotations from this text.
+- [Julian Strube, “The ‘Baphomet’ of Eliphas Lévi: Its Meaning and Historical Context,” _Correspondences_ 4 (2016), pp. 37–79](https://correspondencesjournal.com/ojs/ojs/index.php/home/issue/download/6/4)
+  Scholarly publication history: instalments began in 1854, with the two-volume _Dogme et rituel_ edition in 1855–56. The [1896 English translation scan](https://commons.wikimedia.org/wiki/File:Transcendental_magic_-_its_doctrine_and_ritual_(IA_b24884339).pdf) identifies Waite as translator. Use for the French/English title equivalence and the Baphomet image; earlier lesson shorthand “1855” is not the full publication span.
+- [Mathers, _The Tarot_ (1888) — accessible full-text mirror](https://hermetics.net/media-library/tarot/samuel-liddell-macgregor-mathers-the-tarot/)
+  The public pamphlet, distinct from Book T despite the shared author association and title. Use for the Etteilla-derived lists and public methods of divination.
+- [_Liber LXXVIII_, _The Equinox_ I:8 (1912) — transcription](https://hermeticcloud.com/library/liber-lxxviii/)
+  Public presentation of Golden Dawn tarot material. Do not use 1912 as the date the private teaching began, or assume every text called Book T is an identical edition.
+- [House of White — _The Pictorial Key to the Tarot_ edition research](https://waitesmith.org/index.php/the-pictorial-key-to-the-tarot/)
+  Documents evidence for release in 1910 despite the 1911 title page used for course citations. Read alongside the [Part II card descriptions](https://en.wikisource.org/wiki/The_Pictorial_Key_to_the_Tarot/Part_2) and [Part III meanings and spreads](https://en.wikisource.org/wiki/The_Pictorial_Key_to_the_Tarot/Part_3). The new bookshelf distinguishes deck, book, and title-page dates without revising all earlier lessons.
+- [Crowley to Grady McMurtry, 22 August 1944, reproduced in _Thelema Lodge Calendar_, March 1994](https://www.billheidrick.oto.org/tlc1994/tlc0394.htm)
+  Mentions sending a copy of _The Book of Thoth_. Use to distinguish this real 1944 book from the supposed ancient Egyptian book invoked in occult origin stories, and from Golden Dawn Book T. Context only for this RWS course.
 
 ## Gaps
 

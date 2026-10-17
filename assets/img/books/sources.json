@@ -1,0 +1,69 @@
+{
+  "checked": "2026-10-17",
+  "images": [
+    {
+      "file": "gebelin-title.jpg",
+      "description": "Title page of Le Monde primitif, volume VIII, dated 1781",
+      "edition": "Title page · 1781",
+      "source": "https://archive.org/details/mondeprimitifana08cour/page/n8/mode/1up",
+      "image_url": "https://archive.org/download/mondeprimitifana08cour/page/n8.jpg",
+      "credit": "Boston Public Library / Internet Archive"
+    },
+    {
+      "file": "etteilla-title.jpg",
+      "description": "Title page of Etteilla’s second cahier, dated 1785",
+      "edition": "Second cahier · 1785",
+      "source": "https://archive.org/details/b28777323/page/n6/mode/1up",
+      "image_url": "https://archive.org/download/b28777323/page/n6.jpg",
+      "credit": "Wellcome Library / Internet Archive"
+    },
+    {
+      "file": "levi-title.jpg",
+      "description": "Title page of Transcendental Magic, translated by Arthur Edward Waite, 1896",
+      "edition": "English translation · 1896",
+      "source": "https://archive.org/details/b24884339/page/n8/mode/1up",
+      "image_url": "https://archive.org/download/b24884339/page/n8.jpg",
+      "credit": "Wellcome Library / Internet Archive"
+    },
+    {
+      "file": "mathers-cover.jpg",
+      "description": "Red cloth cover of Mathers’s The Tarot, stamped Fortune Telling Cards",
+      "edition": "First-edition cover · 1888",
+      "source": "https://www.weiserantiquarian.com/pages/books/54244/s-l-macgregor-mathers/the-tarot-its-occult-signification-use-in-fortune-telling-and-method-of-play?soldItem=true",
+      "image_url": "https://weiserantiquarian.cdn.bibliopolis.com/pictures/54244.jpg?auto=webp&fit=bounds&height=1000&v=1454950811&width=768",
+      "credit": "Weiser Antiquarian Books"
+    },
+    {
+      "file": "bookt-title.jpg",
+      "description": "Title page of a later Book T transcription with an ankh and zodiac diagram",
+      "edition": "Later transcription · undated",
+      "source": "https://archive.org/details/mathers-and-felkin-golden-dawn-book-t-the-tarot-1888/page/n0/mode/1up",
+      "image_url": "https://archive.org/download/mathers-and-felkin-golden-dawn-book-t-the-tarot-1888/page/n0.jpg",
+      "credit": "Internet Archive; modern transcription of historical papers"
+    },
+    {
+      "file": "waite-title.jpg",
+      "description": "The Pictorial Key to the Tarot title page, dated 1911",
+      "edition": "Title page · 1911",
+      "source": "https://commons.wikimedia.org/wiki/File:Pictorial_Key_to_the_Tarot.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Pictorial_Key_to_the_Tarot.jpg",
+      "credit": "Wikimedia Commons; William Rider & Son title page"
+    },
+    {
+      "file": "gray-cover.jpg",
+      "description": "Black Bantam cover of A Complete Guide to the Tarot by Eden Gray",
+      "edition": "Bantam paperback · 1972",
+      "source": "https://archive.org/details/completeguidetot00gray",
+      "image_url": "https://archive.org/services/img/completeguidetot00gray",
+      "credit": "Internet Archive; Bantam cover"
+    },
+    {
+      "file": "pollack-cover.jpg",
+      "description": "Yellow cover of Seventy-Eight Degrees of Wisdom by Rachel Pollack",
+      "edition": "Weiser edition · 2019",
+      "source": "https://redwheelweiser.com/book/seventy-eight-degrees-of-wisdom-9781578636655/",
+      "image_url": "https://redwheelweiser.com/wp-content/uploads/2026/07/e9356bcb-512a-489a-9148-a967012098ec-416x633.jpeg",
+      "credit": "Red Wheel/Weiser publisher cover"
+    }
+  ]
+}
